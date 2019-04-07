@@ -1,7 +1,7 @@
 ---
 title: "Config"
-meta_title: "Configuring Ghost - Core Concepts"
-meta_description: "Find out how to configure your site and override Ghost's default behaviour with robust config options. Read more 👉"
+meta_title: "Configuring Qazana - Core Concepts"
+meta_description: "Find out how to configure your site and override Qazana's default behaviour with robust config options. Read more 👉"
 keywords:
     - config
     - concepts
@@ -10,14 +10,14 @@ keywords:
 sidebar: "concepts"
 ---
 
-For self-hosted Ghost users, a custom configuration file can be used to override Ghost's default behaviour. This provides you with a range of options to configure your publication to suit your needs.
+For self-hosted Qazana users, a custom configuration file can be used to override Qazana's default behaviour. This provides you with a range of options to configure your publication to suit your needs.
 
 
 ## Overview
 
-When you install Ghost using the supported and recommended method using `ghost-cli`, a custom configuration file is created for you by default. There are some configuration options which are required by default, and many optional configurations.
+When you install Qazana using the supported and recommended method using `ghost-cli`, a custom configuration file is created for you by default. There are some configuration options which are required by default, and many optional configurations.
 
-The three required options are `url` and `database` which are configured during setup, and `mail` which needs to be configured once you've installed Ghost.
+The three required options are `url` and `database` which are configured during setup, and `mail` which needs to be configured once you've installed Qazana.
 
 This article explains how to setup your mail config, as well as walk you through all of the available config options.
 
@@ -26,7 +26,7 @@ This article explains how to setup your mail config, as well as walk you through
 
 The configuration is managed by [nconf](https://github.com/indexzero/nconf/). A custom configuration file must be a valid JSON file located in the root folder and changes to the file can be implemented using `ghost restart`.
 
-Since Node.js has the concept of environments built in, Ghost supports two environments: **development** and **production**. All public Ghost publications run in production mode, while development mode can be used to test or build on top of Ghost locally.
+Since Node.js has the concept of environments built in, Qazana supports two environments: **development** and **production**. All public Qazana publications run in production mode, while development mode can be used to test or build on top of Qazana locally.
 
 > Check out the official install guides for [development](/install/local/) and [production](/install/ubuntu/).
 
@@ -36,22 +36,22 @@ The configuration files reflect the environment you are using:
 * `config.production.json`
 
 
-#### Ghost in development
-If you would like to start Ghost in development, you don't have to specify any environment, because development is default. To test Ghost in production, you can use:
+#### Qazana in development
+If you would like to start Qazana in development, you don't have to specify any environment, because development is default. To test Qazana in production, you can use:
 
 ```bash
 NODE_ENV=production node index.js
 ```
 
 #### Debugging the configuration output
-Start Ghost with:
+Start Qazana with:
 
 ```bash
 DEBUG=ghost:*,ghost-config node index.js
 ```
 
-#### Running Ghost with config env variables
-Start Ghost using environment variables which match the name and case of each config option:
+#### Running Qazana with config env variables
+Start Qazana using environment variables which match the name and case of each config option:
 
 ```bash
 url=http://ghost.local:2368 node index.js
@@ -73,14 +73,14 @@ There are a number of configuration options which are explained in detail in thi
 | `database` | In production | Type of databased used (default: sqlite3) |
 | `mail`    | In production | Add a mail service |
 | `admin`   | Optional      | Set the protocol and hostname for your admin panel |
-| `server`   | Optional | Host and port, or socket for Ghost to listen on |
-| `privacy`  | Optional | Disable features set in [privacy.md](https://github.com/TryGhost/Ghost/blob/master/PRIVACY.md/) |
+| `server`   | Optional | Host and port, or socket for Qazana to listen on |
+| `privacy`  | Optional | Disable features set in [privacy.md](https://github.com/TryGhost/Qazana/blob/master/PRIVACY.md/) |
 | `paths`   | Optional | Customise internal paths |
 | `referrerPolicy` | Optional | Control the content attribute of the meta referrer tag |
 | `useMinFiles`   | Optionl | Generate assets url with .min notation |
 | `storage`   | Optional | Set a custom storage adapter |
 | `scheduling` | Optional | Set a custom scheduling adapter |
-| `logging`   | Optional | Configure logging for Ghost |
+| `logging`   | Optional | Configure logging for Qazana |
 | `spam`   | Optional | Configure spam settings |
 | `caching` | Optional | Configure caching settings |
 | `compress` | Optional | Disable compression of server responses |
@@ -91,12 +91,12 @@ There are a number of configuration options which are explained in detail in thi
 
 *(Required in production)*
 
-Once a Ghost publication is installed, the first thing to do is set a url. When installing using `ghost-cli` the install process request the URL during the setup process.
+Once a Qazana publication is installed, the first thing to do is set a url. When installing using `ghost-cli` the install process request the URL during the setup process.
 
 Enter the URL that is used to access your publication. If using a subpath, enter the full path, `https://example.com/blog/`. If using SSL, always enter the URL with `https://`.
 
 #### SSL
-We always recommend using SSL to run your Ghost publication in production. Ghost has a number of configuration options for working with SSL, and securing the URLs for the admin `/ghost/` and the frontend of your publication. Without SSL your username and password are sent in plaintext.
+We always recommend using SSL to run your Qazana publication in production. Qazana has a number of configuration options for working with SSL, and securing the URLs for the admin `/ghost/` and the frontend of your publication. Without SSL your username and password are sent in plaintext.
 
 `ghost-cli` prompts to setup SSL during the installation process. After a successful ssl setup, you can find your ssl certificate in `/etc/letsencrypt`.
 
@@ -107,7 +107,7 @@ If you see errors such as `access denied from url`, then the provided URL in you
 
 *(Required in production)*
 
-Ghost is configured using MySQL by default:
+Qazana is configured using MySQL by default:
 
 ```json
 "database": {
@@ -136,7 +136,7 @@ Alternatively you can configure sqlite3:
 ```
 
 #### Number of connections
-It's possible to limit the number of simultaneous connections using the pool setting. The default values are a minimum of 2 and a maximum of 10, which means Ghost always maintains two active database connections. You can set the minimum to 0 to prevent this:
+It's possible to limit the number of simultaneous connections using the pool setting. The default values are a minimum of 2 and a maximum of 10, which means Qazana always maintains two active database connections. You can set the minimum to 0 to prevent this:
 
 ```json
 "database": {
@@ -150,7 +150,7 @@ It's possible to limit the number of simultaneous connections using the pool set
 ```
 
 #### SSL
-In a typical Ghost installation the MySQL database will be on the same server as Ghost itself. With cloud computing and database-as-a-service providers you might want to enable SSL connections to the database.
+In a typical Qazana installation the MySQL database will be on the same server as Qazana itself. With cloud computing and database-as-a-service providers you might want to enable SSL connections to the database.
 
 If your Certificate CA or the CA of your database provider is in the Mozilla trusted CA list you can enable SSL by adding `"ssl": true` to the database connection configuration:
 
@@ -226,9 +226,9 @@ For a certificate chain, include all CA certificates in the single line string:
 
 *(Required in production)*
 
-The most important piece of configuration once you've been through the install process is to setup mail. Mail configuration allows Ghost to send emails such as lost password and user invite emails.
+The most important piece of configuration once you've been through the install process is to setup mail. Mail configuration allows Qazana to send emails such as lost password and user invite emails.
 
-Ghost uses [Nodemailer 0.7](https://github.com/nodemailer/nodemailer/tree/0.7/) under the hood, and tries to use the direct mail service if available - but a more reliable solution is to setup mail using an external service.
+Qazana uses [Nodemailer 0.7](https://github.com/nodemailer/nodemailer/tree/0.7/) under the hood, and tries to use the direct mail service if available - but a more reliable solution is to setup mail using an external service.
 
 #### Setup an email sending account
 
@@ -304,7 +304,7 @@ It's also possible to use [Amazon Simple Email Service](https://aws.amazon.com/s
 
 #### From address
 
-By default the 'from' address for mail sent from Ghost is set to the title of your publication, for example `<ghost@your-publication.com>`. To override this to something different, use:
+By default the 'from' address for mail sent from Qazana is set to the title of your publication, for example `<ghost@your-publication.com>`. To override this to something different, use:
 
 ```json
 "mail": {
@@ -333,7 +333,7 @@ Admin can be used to specify a different protocol for your admin panel or a diff
 
 ### Server
 
-The server host and port are the IP address and port number that Ghost listens on for requests. By default, requests are routed from port 80 to Ghost by nginx (recommended), or apache.
+The server host and port are the IP address and port number that Qazana listens on for requests. By default, requests are routed from port 80 to Qazana by nginx (recommended), or apache.
 
 ```json
 "server": {
@@ -343,7 +343,7 @@ The server host and port are the IP address and port number that Ghost listens o
 ```
 
 #### Unix Sockets
-Ghost can also be configured to listen on a unix socket by changing the server config:
+Qazana can also be configured to listen on a unix socket by changing the server config:
 
 ```json
 "server": {
@@ -372,7 +372,7 @@ All features inside the privacy.md file are enabled by default. It is possible t
 * RPC ping
 * Structured data
 
-For more information about the features, read the [privacy.md page](https://github.com/TryGhost/Ghost/blob/master/PRIVACY.md/).
+For more information about the features, read the [privacy.md page](https://github.com/TryGhost/Qazana/blob/master/PRIVACY.md/).
 
 To turn off **all** of the features, use:
 
@@ -396,7 +396,7 @@ Alternatively, configure each feature individually:
 
 ### Paths
 
-The configuration of paths can be relative or absolute. To use a content directory that does not live inside the Ghost folder, specify a paths object with a new contentPath:
+The configuration of paths can be relative or absolute. To use a content directory that does not live inside the Qazana folder, specify a paths object with a new contentPath:
 
 ```json
 "paths": {
@@ -415,7 +415,7 @@ Set the value of the content attribute of the meta referrer HTML tag by adding r
 
 ### Logging
 
-Configure how Ghost should log, for example:
+Configure how Qazana should log, for example:
 
 ```json
 "logging": {
@@ -436,11 +436,11 @@ The default log level is `info` which prints all info, warning and error logs. S
 
 #### `rotation`
 
-Tell Ghost to rotate your log files. By default Ghost keeps 10 log files and rotates every day. Rotation is enabled by default in production and disabled in development.
+Tell Qazana to rotate your log files. By default Qazana keeps 10 log files and rotates every day. Rotation is enabled by default in production and disabled in development.
 
 #### `transports`
 
-Define where Ghost should log to. By default Ghost writes to stdout and into file for production, and to stdout only for development.
+Define where Qazana should log to. By default Qazana writes to stdout and into file for production, and to stdout only for development.
 
 #### `path`
 
@@ -449,12 +449,12 @@ Log your content path, e.g. `content/logs/`. Set any path but ensure the permiss
 
 ### Spam
 
-Tell Ghost how to treat [spam requests](https://github.com/TryGhost/Ghost/blob/master/core/server/config/defaults.json#L31).
+Tell Qazana how to treat [spam requests](https://github.com/TryGhost/Qazana/blob/master/core/server/config/defaults.json#L31).
 
 
 ### Caching
 
-Configure [caching](https://github.com/TryGhost/Ghost/blob/master/core/server/config/defaults.json#L57/) for sitemaps, redirects or assets.
+Configure [caching](https://github.com/TryGhost/Qazana/blob/master/core/server/config/defaults.json#L57/) for sitemaps, redirects or assets.
 
 
 ### Compress
@@ -464,7 +464,7 @@ The compression flag is turned on by default using `"compress": true`. Alternati
 
 ### Image optimisation
 
-When uploading images into the Ghost editor, they are automatically processed and compressed by default. This can be disabled in your `config.[env].json` file using:
+When uploading images into the Qazana editor, they are automatically processed and compressed by default. This can be disabled in your `config.[env].json` file using:
 
 ```json
 "imageOptimization": {
@@ -483,6 +483,6 @@ The original image is kept with the suffix `_0`.
 
 ## Summary
 
-You've explored how to configure a self-hosted Ghost publication with the required config options, as well as discovered how to make use of the optional config options that are available in the `config.[env].json` file.
+You've explored how to configure a self-hosted Qazana publication with the required config options, as well as discovered how to make use of the optional config options that are available in the `config.[env].json` file.
 
 If you run into any issues when configuring your publication, try searching this site to find information about common error messages and issues.

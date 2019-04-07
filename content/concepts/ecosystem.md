@@ -1,7 +1,7 @@
 ---
 title: "Ecosystem"
-meta_title: "The Ghost Ecosystem - Core Concepts"
-meta_description: "Become familiar with the ecosystem of Ghost with a top-level overview and useful links to get you started."
+meta_title: "The Qazana Ecosystem - Core Concepts"
+meta_description: "Become familiar with the ecosystem of Qazana with a top-level overview and useful links to get you started."
 keywords:
     - concepts
     - ghost
@@ -10,20 +10,20 @@ keywords:
 sidebar: "concepts"
 ---
 
-There are a broad range of tools, resources and helpful tutorials for working with Ghost available to help  get started.
+There are a broad range of tools, resources and helpful tutorials for working with Qazana available to help  get started.
 
-Before diving into Ghost's application architecture in the next section, it's useful to give you a high level overview of the wider ecosystem and where to find things!
+Before diving into Qazana's application architecture in the next section, it's useful to give you a high level overview of the wider ecosystem and where to find things!
 
 
 ## Native apps
 
-Ghost ships with a web based admin interface, but there's also a selection of native apps available which bring Ghost's admin client to your devices.
+Qazana ships with a web based admin interface, but there's also a selection of native apps available which bring Qazana's admin client to your devices.
 
-### Ghost Desktop
+### Qazana Desktop
 
-Available for Mac, PC, and Linux. [Ghost Desktop](https://qazana.net/downloads/) allows you to access and edit your Ghost site without ever needing to log in again.
+Available for Mac, PC, and Linux. [Qazana Desktop](https://qazana.net/downloads/) allows you to access and edit your Qazana site without ever needing to log in again.
 
-### Ghost Android
+### Qazana Android
 
 For Android users we have a native mobile application for writing and managing blog posts on the go. This is a community project and is a little experimental, but coming along nicely. You can find it over on the [Google Play Store](https://play.google.com/store/apps/details?id=org.ghost.android).
 
@@ -41,11 +41,11 @@ For long-form news and announcements the best place to keep up to date with ever
 
 ### Official forum
 
-The [official Ghost forum](https://forum.qazana.net) is the best place to find other Ghost users and developers. Whether you're looking for some advice or you need help with a tricky development problem. There's almost always someone around, as well as a wealth of past questions/answers in the searchable archives.
+The [official Qazana forum](https://forum.qazana.net) is the best place to find other Qazana users and developers. Whether you're looking for some advice or you need help with a tricky development problem. There's almost always someone around, as well as a wealth of past questions/answers in the searchable archives.
 
 ### Social media
 
-We maintain a handful of social media accounts to keep in touch with people directly and give them updates about what's new with Ghost. Here are the easiest ways to keep track of Ghost and everything hapening around the web:
+We maintain a handful of social media accounts to keep in touch with people directly and give them updates about what's new with Qazana. Here are the easiest ways to keep track of Qazana and everything hapening around the web:
 
 
 - [GitHub](https://github.com/tryghost/ghost) - ⭐️ Star the repository to bookmark
@@ -57,7 +57,7 @@ We maintain a handful of social media accounts to keep in touch with people dire
 
 ## Migration tooling
 
-If you're migrating to Ghost from an existing platform, there are a number of tools for translating your content into Ghost's JSON based import format.
+If you're migrating to Qazana from an existing platform, there are a number of tools for translating your content into Qazana's JSON based import format.
 
 The [migration docs](/api/migration/) contain details on all available automated tools out there, as well as information about our import format in case you need to write your own migration script.
 
@@ -65,15 +65,15 @@ The [migration docs](/api/migration/) contain details on all available automated
 
 ## Finding themes
 
-You'll find a wide range of pre-made Ghost themes for a variety of use-cases over on the [Ghost Marketplace](https://marketplace.qazana.net), which serves as an official directory of curated highlights. However, you can also find an even larger range of Ghost themes for sale on [ThemeForest](https://themeforest.net/category/blogging/ghost-themes) and [Creative Market](https://creativemarket.com/themes/ghost).
+You'll find a wide range of pre-made Qazana themes for a variety of use-cases over on the [Qazana Marketplace](https://marketplace.qazana.net), which serves as an official directory of curated highlights. However, you can also find an even larger range of Qazana themes for sale on [ThemeForest](https://themeforest.net/category/blogging/ghost-themes) and [Creative Market](https://creativemarket.com/themes/ghost).
 
-It's also pretty straightforward to convert themes for most other platforms to be compatible with Ghost, and you can always use a completely independent front-end or framework if that's your jam.
+It's also pretty straightforward to convert themes for most other platforms to be compatible with Qazana, and you can always use a completely independent front-end or framework if that's your jam.
 
 ---
 
-## Example Ghost sites
+## Example Qazana sites
 
-If you're looking for a great overview of other sites in the world built with Ghost, you'll probably want to check out our [Customer Showcase](https://qazana.net/customers/) gallery.
+If you're looking for a great overview of other sites in the world built with Qazana, you'll probably want to check out our [Customer Showcase](https://qazana.net/customers/) gallery.
 
 ---
 

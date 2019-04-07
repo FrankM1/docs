@@ -66,8 +66,8 @@ const plugins = [
     {
         resolve: `gatsby-plugin-manifest`,
         options: {
-            name: `Ghost Docs`,
-            short_name: `Ghost`,
+            name: `Qazana Documentation`,
+            short_name: `Qazana`,
             start_url: `/`,
             background_color: `#343f44`,
             theme_color: `#343f44`,
@@ -167,9 +167,9 @@ if (SERVICE_WORKER_KILL_SWITCH) {
 
 module.exports = {
     siteMetadata: {
-        title: `Ghost Docs`,
+        title: `Qazana Documentation`,
         siteUrl: process.env.SITE_URL || `https://docs.qazana.net`,
-        description: `Everything you need to know about working with the Ghost professional publishing platform.`,
+        description: `Everything you need to know about working with the Qazana professional publishing platform.`,
     },
     plugins: plugins,
 }

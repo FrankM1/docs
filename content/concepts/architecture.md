@@ -1,7 +1,7 @@
 ---
 title: "Architecture"
-meta_title: "Ghost Architecture - Core Concepts"
-meta_description: "Ghost is structured as a modern, decoupled web application. Discover how things fit together at Ghost."
+meta_title: "Qazana Architecture - Core Concepts"
+meta_description: "Qazana is structured as a modern, decoupled web application. Discover how things fit together at Qazana."
 keywords:
     - concepts
     - ghost
@@ -10,14 +10,14 @@ keywords:
 sidebar: "concepts"
 ---
 
-Ghost is structured as a modern, decoupled web application with a sensible service-based architecture.
+Qazana is structured as a modern, decoupled web application with a sensible service-based architecture.
 
 
 1. **A robust core JSON API**
 2. **A beautiful admin client app**
 3. **A simple, powerful front-end theme layer**
 
-These three areas work together to make every Ghost site function smoothly, but because they're decoupled there's plenty of room for customisation.
+These three areas work together to make every Qazana site function smoothly, but because they're decoupled there's plenty of room for customisation.
 
 
 ---
@@ -25,21 +25,21 @@ These three areas work together to make every Ghost site function smoothly, but 
 
 ## How things fit together
 
-![Ghost Architecture](../images/concepts/ghost-architecture.png)
+![Qazana Architecture](../images/concepts/ghost-architecture.png)
 
-Physically, the Ghost codebase is structured in two main directories:
+Physically, the Qazana codebase is structured in two main directories:
 
-- `core` - Contains the core files which make up Ghost
+- `core` - Contains the core files which make up Qazana
 - `content` - Contains the files which may be added or changed by the user such as themes and images
 
 
 ### Data & Storage
 
-Ghost ships with the [Bookshelf.js ORM](http://bookshelfjs.org) layer by default allowing for a range of databases to be used. Currently SQLite3 is the supported default in development while MySQL is recommended for production. Other databases are available, and compatible, but not supported by the core team.
+Qazana ships with the [Bookshelf.js ORM](http://bookshelfjs.org) layer by default allowing for a range of databases to be used. Currently SQLite3 is the supported default in development while MySQL is recommended for production. Other databases are available, and compatible, but not supported by the core team.
 
-Additionally, while Ghost uses local file storage by default it's also possible to use custom storage adapters to make your filesystem completely external. There are fairly wide range of pre-made [storage adapters for Ghost](/concepts/storage-adapters/) already available for use.
+Additionally, while Qazana uses local file storage by default it's also possible to use custom storage adapters to make your filesystem completely external. There are fairly wide range of pre-made [storage adapters for Qazana](/concepts/storage-adapters/) already available for use.
 
-### Ghost-CLI
+### Qazana-CLI
 
 Orchestrating these different components is done via a comprehensive CLI and set of utilities to keep everything running and up to date.
 
@@ -49,4 +49,4 @@ Orchestrating these different components is done via a comprehensive CLI and set
 
 ## Philosophy
 
-Ghost is architected to be familiar and easy to work with for teams who are already used to working with JavaScript based codebases, whilst still being accessible to a broad audience. It's neither the most bleeding-edge structure in the world, nor the most simple, but strives to be right balance between the two.
+Qazana is architected to be familiar and easy to work with for teams who are already used to working with JavaScript based codebases, whilst still being accessible to a broad audience. It's neither the most bleeding-edge structure in the world, nor the most simple, but strives to be right balance between the two.

@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting"
-meta_title: "Troubleshooting with Ghost - Core Concepts"
-meta_description: "If you're having trouble with running Ghost, here's a quick guide to resolving almost any problem."
+meta_title: "Troubleshooting with Qazana - Core Concepts"
+meta_description: "If you're having trouble with running Qazana, here's a quick guide to resolving almost any problem."
 keywords:
     - concepts
     - ghost
@@ -10,23 +10,23 @@ keywords:
 sidebar: "concepts"
 ---
 
-If you're having trouble with running Ghost, here's a quick guide to resolving almost any problem.
+If you're having trouble with running Qazana, here's a quick guide to resolving almost any problem.
 
 
 ## Search the docs
 
-We heavily document all of the most common problems which people have running Ghost, so chances are if you search these docs for your error message or keyphrase then you'll find a page about it! Our search spans a massive archive of content to try and find exactly what you're looking for.
+We heavily document all of the most common problems which people have running Qazana, so chances are if you search these docs for your error message or keyphrase then you'll find a page about it! Our search spans a massive archive of content to try and find exactly what you're looking for.
 
 
-## Ghost(Pro) email support
+## Qazana(Pro) email support
 
-If you're having trouble with a **Ghost(Pro)** site, just drop us an email on `support@qazana.net` and we'll be more than happy to help. Direct email support from the creators of Ghost is one of the benefits of our fully managed platform.
+If you're having trouble with a **Qazana(Pro)** site, just drop us an email on `support@qazana.net` and we'll be more than happy to help. Direct email support from the creators of Qazana is one of the benefits of our fully managed platform.
 
-If you're not a **Ghost(Pro)** customer, there are still plenty of ways to get help:
+If you're not a **Qazana(Pro)** customer, there are still plenty of ways to get help:
 
-### The Ghost forum
+### The Qazana forum
 
-You'll find a large community of developers and users on [the Ghost Forum](https://forum.qazana.net) who are generally very helpful to each other in resolving common issues. It's worth searching here, too, to check if your question has already been answered. If not, feel free to open a new topic and see if anyone can give you a hand.
+You'll find a large community of developers and users on [the Qazana Forum](https://forum.qazana.net) who are generally very helpful to each other in resolving common issues. It's worth searching here, too, to check if your question has already been answered. If not, feel free to open a new topic and see if anyone can give you a hand.
 
 
 ### Issues with 3rd party services

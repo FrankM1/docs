@@ -1,8 +1,8 @@
 ---
-title: "How to install Ghost on Ubuntu"
+title: "How to install Qazana on Ubuntu"
 date: "2018-10-01"
-meta_title: "How to install & setup Ghost on Ubuntu 16.04 + 18.04"
-meta_description: "A full production install guide for how to install the Ghost professional publishing platform on a production server running Ubuntu 16.04 or 18.04."
+meta_title: "How to install & setup Qazana on Ubuntu 16.04 + 18.04"
+meta_description: "A full production install guide for how to install the Qazana professional publishing platform on a production server running Ubuntu 16.04 or 18.04."
 keywords:
     - setup
     - production
@@ -10,11 +10,11 @@ keywords:
     - ubuntu
 ---
 
-A full guide for installing, configuring and running Ghost on your Ubuntu **16.04** or **18.04** server, for use in production
+A full guide for installing, configuring and running Qazana on your Ubuntu **16.04** or **18.04** server, for use in production
 
 ## Overview
 
-This the official guide for self-hosting Ghost using our recommended stack of Ubuntu 16.04 or 18.04. If you're comfortable installing, maintaining and updating your own software, this is the place for you. By the end of this guide you'll have a fully configured Ghost install running in production using MySQL.
+This the official guide for self-hosting Qazana using our recommended stack of Ubuntu 16.04 or 18.04. If you're comfortable installing, maintaining and updating your own software, this is the place for you. By the end of this guide you'll have a fully configured Qazana install running in production using MySQL.
 
 This install is **not** suitable for [local use](/install/local/) or [contributing](/install/source/) to core.
 
@@ -49,7 +49,7 @@ Before getting started you should set an **A record** from the domain you plan t
 
 ## Server Setup
 
-This part of the guide will ensure all prerequisites are met for installing the Ghost-CLI.
+This part of the guide will ensure all prerequisites are met for installing the Qazana-CLI.
 
 ### Create a new user 👋
 
@@ -63,7 +63,7 @@ ssh root@your_server_ip
 adduser <user>
 ```
 
-> Note: Using the user name `ghost` causes conflicts with the Ghost-CLI, so it’s important to use an alternative name.
+> Note: Using the user name `ghost` causes conflicts with the Qazana-CLI, so it’s important to use an alternative name.
 
 ```bash
 # Add user to superuser group to unlock admin privileges
@@ -89,7 +89,7 @@ Follow any prompts to enter the password you just created in the previous step.
 
 ### Install NGINX
 
-Ghost uses an NGINX server and the SSL configuration requires NGINX 1.9.5 or higher.
+Qazana uses an NGINX server and the SSL configuration requires NGINX 1.9.5 or higher.
 
 ```bash
 # Install NGINX
@@ -113,7 +113,7 @@ sudo apt-get install mysql-server
 
 #### MySQL on Ubuntu 18.04
 
-If you’re running Ubuntu 18.04, a password is required to ensure MySQL is compatible with `Ghost-CLI`. This requires a few extra steps!
+If you’re running Ubuntu 18.04, a password is required to ensure MySQL is compatible with `Qazana-CLI`. This requires a few extra steps!
 
 ```bash
 # To set a password, run
@@ -145,9 +145,9 @@ sudo apt-get install -y nodejs
 
 ---
 
-## Install Ghost-CLI
+## Install Qazana-CLI
 
-[Ghost-CLI](/api/ghost-cli/) is a commandline tool to help you get Ghost installed and configured for use, quickly and easily. The npm module can be installed with `npm` or `yarn`.
+[Qazana-CLI](/api/ghost-cli/) is a commandline tool to help you get Qazana installed and configured for use, quickly and easily. The npm module can be installed with `npm` or `yarn`.
 
 ```bash
 sudo npm install ghost-cli@latest -g
@@ -159,11 +159,11 @@ Once installed, you can always run `ghost help` to see a list of available comma
 ---
 
 
-## Install Ghost
+## Install Qazana
 
-Once your server is correctly setup and the `ghost-cli` is installed, you can install Ghost. The following steps are the recommended setup. If you would prefer more fine-grained control, the CLI has [flags and options](/api/ghost-cli/) that allow you to break down the steps and customise exactly what they do. 
+Once your server is correctly setup and the `ghost-cli` is installed, you can install Qazana. The following steps are the recommended setup. If you would prefer more fine-grained control, the CLI has [flags and options](/api/ghost-cli/) that allow you to break down the steps and customise exactly what they do.
 
-> Note: Installing Ghost in the `/root` or `home/<user>` directories results in a broken setup. Always use a custom directory with properly configured permissions.
+> Note: Installing Qazana in the `/root` or `home/<user>` directories results in a broken setup. Always use a custom directory with properly configured permissions.
 
 
 ### Create a directory
@@ -186,7 +186,7 @@ cd /var/www/ghost
 
 ### Run the install process
 
-Now you've made it this far, it's time to install Ghost with a single command 😀
+Now you've made it this far, it's time to install Qazana with a single command 😀
 
 ```bash
 ghost install
@@ -198,7 +198,7 @@ During install, the CLI will ask a number of questions to configure your site.
 
 #### Blog URL
 
-Enter the exact URL your publication will be available at and include the protocol for HTTP or HTTPS. For example, `https://example.com`. If you use HTTPS, Ghost-CLI will offer to set up SSL for you. Using IP addresses will cause errors.
+Enter the exact URL your publication will be available at and include the protocol for HTTP or HTTPS. For example, `https://example.com`. If you use HTTPS, Qazana-CLI will offer to set up SSL for you. Using IP addresses will cause errors.
 
 
 #### MySQL hostname
@@ -210,13 +210,13 @@ This determines where your MySQL database can be accessed from. When MySQL is in
 If you already have an existing MySQL database enter the the username. Otherwise, enter `root`. Then supply the password for your user.
 
 
-#### Ghost database name
+#### Qazana database name
 
-Enter the name of your database. It will be automatically set up for you, unless you're using a **non**-root MySQL user/pass. In that case the database must already exist and have the correct permissions. 
+Enter the name of your database. It will be automatically set up for you, unless you're using a **non**-root MySQL user/pass. In that case the database must already exist and have the correct permissions.
 
 #### Set up a ghost MySQL user? <small>(Recommended)</small>
 
-If you provided your root MySQL user, Ghost-CLI can create a custom MySQL user that can only access/edit your new Ghost database and nothing else.
+If you provided your root MySQL user, Qazana-CLI can create a custom MySQL user that can only access/edit your new Qazana database and nothing else.
 
 #### Set up NGINX? <small>(Recommended)</small>
 
@@ -224,18 +224,18 @@ Sets NGINX up automatically enabling your site to be viewed by the outside world
 
 #### Set up SSL? <small>(Recommended)</small>
 
-If you used an `https` Blog URL and have already pointed your domain to the right place, Ghost-CLI can automatically set up SSL for you using [Let's Encrypt](https://letsencrypt.org). Alternatively you do this later by running `ghost setup ssl` at any time.
+If you used an `https` Blog URL and have already pointed your domain to the right place, Qazana-CLI can automatically set up SSL for you using [Let's Encrypt](https://letsencrypt.org). Alternatively you do this later by running `ghost setup ssl` at any time.
 
 **Enter your email**<br>
 SSL certification setup requires an email address so that you can be kept informed if there is any issue with your certificate, including during renewal.
 
 #### Set up systemd? <small>(Recommended)</small>
 
-`systemd` is the recommended process manager tool to keep Ghost running smoothly. We recommend choosing `yes` but it’s possible to set up your own process management.
+`systemd` is the recommended process manager tool to keep Qazana running smoothly. We recommend choosing `yes` but it’s possible to set up your own process management.
 
-#### Start Ghost?
+#### Start Qazana?
 
-Choosing `yes` runs Ghost, and makes your site work.
+Choosing `yes` runs Qazana, and makes your site work.
 
 
 ---
@@ -243,7 +243,7 @@ Choosing `yes` runs Ghost, and makes your site work.
 
 ## Future maintenance
 
-Once Ghost is properly set up it's important to keep it properly maintained and up to date. Fortunately, this is relatively easy to do using Ghost-CLI. Run `ghost help` for a list of available commands, or explore the full [Ghost-CLI documentation](/api/ghost-cli/).
+Once Qazana is properly set up it's important to keep it properly maintained and up to date. Fortunately, this is relatively easy to do using Qazana-CLI. Run `ghost help` for a list of available commands, or explore the full [Qazana-CLI documentation](/api/ghost-cli/).
 
 ---
 
@@ -261,4 +261,4 @@ For troubleshooting and errors, use the site search and [FAQ section](/faq/error
 
 ## What's next?
 
-You're all set! Now you can start customising your site. Check out our range of [tutorials](/tutorials/) or the Ghost [API documentation](/api/) depending on which page of this choose-your-own-adventure experience you'd like to subject yourself to next.
+You're all set! Now you can start customising your site. Check out our range of [tutorials](/tutorials/) or the Qazana [API documentation](/api/) depending on which page of this choose-your-own-adventure experience you'd like to subject yourself to next.

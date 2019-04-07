@@ -1,6 +1,6 @@
 ---
 title: "Storage Adapters"
-meta_title: "Custom Storage Adapters for Ghost"
+meta_title: "Custom Storage Adapters for Qazana"
 meta_description: "Find out how to use custom storage adapters to store your publication's images to externally on S3, Google Drive, Azure, GitHub, Imgur and more."
 keywords:
     - storage
@@ -13,12 +13,12 @@ sidebar: "concepts"
 It's possible to send your publication's images to a 3rd party service, CDN or database using a custom storage module.
 
 ## Overview
-The storage layer is used to store images from an upload admin UI, from the API, and also when images are included in a zip file uploaded to the importer. Using a custom storage module allows you to change where images are stored without changing Ghost core.
+The storage layer is used to store images from an upload admin UI, from the API, and also when images are included in a zip file uploaded to the importer. Using a custom storage module allows you to change where images are stored without changing Qazana core.
 
 
 ## Using a custom storage adapter
 
-By default Ghost stores images on your filesystem. The default location is the Ghost content path in your Ghost folder under `content/images`, or an alternative custom content path that you have configured.
+By default Qazana stores images on your filesystem. The default location is the Qazana content path in your Qazana folder under `content/images`, or an alternative custom content path that you have configured.
 
 In order to use a custom storage adapter, your custom configuration file needs to be updated to provide config for your new storage module and set it as active:
 
@@ -39,7 +39,7 @@ The storage block should have 2 items:
 
 ## Available custom storage adapters
 
-* [local-file-store](https://github.com/TryGhost/Ghost/blob/0304816/core/server/storage/local-file-store.js) (default) saves images to the local filesystem
+* [local-file-store](https://github.com/TryGhost/Qazana/blob/0304816/core/server/storage/local-file-store.js) (default) saves images to the local filesystem
 * [http-store passes](https://gist.github.com/ErisDS/559e11bf3e84b89a9594) image requests through to an HTTP endpoint
 * [s3-store](https://github.com/spanishdict/ghost-s3-compat) saves to Amazon S3 and proxies requests to S3
 * [s3-store](https://github.com/colinmeinke/ghost-storage-adapter-s3) saves to Amazon S3 and works with 0.10+
@@ -61,7 +61,7 @@ The storage block should have 2 items:
 
 ## Creating a custom storage adapter
 
-In order to replace the storage module, use these requirements. You can also take a look at our [default local storage implementation](https://github.com/TryGhost/Ghost/blob/master/core/server/adapters/storage/LocalFileStorage.js).
+In order to replace the storage module, use these requirements. You can also take a look at our [default local storage implementation](https://github.com/TryGhost/Qazana/blob/master/core/server/adapters/storage/LocalFileStorage.js).
 
 #### Location
 
@@ -70,7 +70,7 @@ In order to replace the storage module, use these requirements. You can also tak
 
 #### Base adapter class inheritance
 
-A custom storage adapter must inherit from your base storage adapter. By default the Base Storage Adapter is installed by Ghost and should be available in your custom adapter.
+A custom storage adapter must inherit from your base storage adapter. By default the Base Storage Adapter is installed by Qazana and should be available in your custom adapter.
 
 ```javascript
 'use strict';
@@ -91,7 +91,7 @@ module.exports = MyCustomAdapter;
 Your custom storage adapter must implement five required functions:
 * `save` - The `.save()` method stores the image and returns a promise which resolves the path from which the image should be requested in future.
 * `exists` - Used by the base storage adapter to check whether a file exists or not
-* `serve` - Ghost calls `.serve()` as part of its middleware stack, and mounts the returned function as the middleware for serving images
+* `serve` - Qazana calls `.serve()` as part of its middleware stack, and mounts the returned function as the middleware for serving images
 * `delete`
 * `read`
 

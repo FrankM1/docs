@@ -32,7 +32,7 @@ export const getPostHeaderConfig = ({ pathname }) => {
             postHeaderConfig.subLink = `/api/webhooks/`
         }
         if (pathname.match(/\/ghost-cli\//i)) {
-            postHeaderConfig.subtitle = `Ghost CLI`
+            postHeaderConfig.subtitle = `Qazana CLI`
             postHeaderConfig.subLink = `/api/ghost-cli/`
         }
     }
@@ -43,7 +43,7 @@ export const getPostHeaderConfig = ({ pathname }) => {
         postHeaderConfig.mainLink = `/setup/`
         postHeaderConfig.bgClass = `bg-setup`
         if (pathname.match(/\/ghost-pro\//i)) {
-            postHeaderConfig.subtitle = `Ghost(Pro)`
+            postHeaderConfig.subtitle = `Qazana(Pro)`
             postHeaderConfig.subLink = `/setup/ghost-pro/`
         }
         if (pathname.match(/\/ubuntu\//i)) {

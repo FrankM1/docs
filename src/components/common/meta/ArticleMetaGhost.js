@@ -106,7 +106,7 @@ const ArticleMetaGhost = ({ data, canonical, fetchAuthorData, title, overwriteDe
 
 // "publisher": {
 //     "@type": "Organization",
-//         "name": "Ghost",
+//         "name": "Qazana",
 //             "logo": {
 //         "@type": "ImageObject",
 //             "url": "https://blog.qazana.net/favicon.png",

@@ -6,10 +6,10 @@ import url from 'url'
 const SITEURL = process.env.SITE_URL || `https://docs.qazana.net`
 
 const imageUrls = {
-    faq: url.resolve(SITEURL, `/images/meta/Ghost-FAQ.jpg`),
-    integrations: url.resolve(SITEURL, `/images/meta/Ghost-Integrations.jpg`),
-    tutorials: url.resolve(SITEURL, `/images/meta/Ghost-Tutorials.jpg`),
-    default: url.resolve(SITEURL, `/images/meta/Ghost-Docs.jpg`),
+    faq: url.resolve(SITEURL, `/images/meta/Qazana-FAQ.jpg`),
+    integrations: url.resolve(SITEURL, `/images/meta/Qazana-Integrations.jpg`),
+    tutorials: url.resolve(SITEURL, `/images/meta/Qazana-Tutorials.jpg`),
+    default: url.resolve(SITEURL, `/images/meta/Qazana-Docs.jpg`),
 }
 
 export const getMetaImageUrls = (section) => {

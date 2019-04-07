@@ -199,7 +199,7 @@
 
 /* Full bleed images (#full)
 Super neat trick courtesy of @JoelDrapper
-Usage (In Ghost edtior):
+Usage (In Qazana edtior):
 ![img](/some/image.jpg#full)
 */
 .post-content img[src$="#full"] {
@@ -208,7 +208,7 @@ Usage (In Ghost edtior):
 }
 
 /* Image captions
-Usage (In Ghost editor):
+Usage (In Qazana editor):
 ![img](/some/image.jpg)
 <small>Your image caption</small>
 */

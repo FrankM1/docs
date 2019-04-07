@@ -1,9 +1,9 @@
 {
   "name": "docs",
   "version": "1.0.0",
-  "description": "Documentation for the Ghost publishing platform",
+  "description": "Documentation for the Qazana publishing platform",
   "repository": "git@github.com:TryGhost/docs.git",
-  "author": "Ghost Foundation",
+  "author": "Qazana Foundation",
   "license": "MIT",
   "main": "app.js",
   "scripts": {

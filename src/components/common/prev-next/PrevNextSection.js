@@ -37,7 +37,7 @@ const PrevNextSection = ({ sidebar, location, next }) => {
 
         // Set the last page in "Concepts" to lead to the setup guide
         if (!next && sidebar === `concepts`) {
-            next = { group: `Setup`, link: `/setup/`, title: `Install Ghost` }
+            next = { group: `Setup`, link: `/setup/`, title: `Install Qazana` }
         }
 
         return (

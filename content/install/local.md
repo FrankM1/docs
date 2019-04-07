@@ -1,8 +1,8 @@
 ---
-title: "How to install Ghost locally"
+title: "How to install Qazana locally"
 date: "2018-10-01"
-meta_title: "How to install Ghost locally on Mac, PC or Linux"
-meta_description: "A detailed local install guide for how to install the Ghost publishing platform on your computer running Mac, PC or Linux. Ideal for Ghost theme development."
+meta_title: "How to install Qazana locally on Mac, PC or Linux"
+meta_description: "A detailed local install guide for how to install the Qazana publishing platform on your computer running Mac, PC or Linux. Ideal for Qazana theme development."
 keywords:
     - setup
     - local
@@ -10,11 +10,11 @@ keywords:
     - development
 ---
 
-Fast-track local install for getting Ghost running on your computer or setup for doing theme development
+Fast-track local install for getting Qazana running on your computer or setup for doing theme development
 
 ## Overview
 
-Running Ghost locally is the easiest way to get your own copy of the software running and be able to do some local development with it. By the end of this guide you will have completed a local Ghost install that runs in development mode using SQLite3.
+Running Qazana locally is the easiest way to get your own copy of the software running and be able to do some local development with it. By the end of this guide you will have completed a local Qazana install that runs in development mode using SQLite3.
 
 This install is **not** suitable for [production use](/install/ubuntu/) or [contributing](/install/source/) to core.
 
@@ -24,7 +24,7 @@ This install is **not** suitable for [production use](/install/ubuntu/) or [cont
 
 ## Prerequisites
 
-To install Ghost locally you will need the following:
+To install Qazana locally you will need the following:
 
 * A computer running MacOS, Windows or Linux
 * A [supported version](/faq/node-versions/) of [Node.js](https://nodejs.org)
@@ -35,9 +35,9 @@ To install Ghost locally you will need the following:
 ---
 
 
-## Install Ghost-CLI
+## Install Qazana-CLI
 
-[Ghost-CLI](/api/ghost-cli/) is a commandline tool to help you get Ghost installed and configured for use, quickly and easily. The npm module can be installed with `npm` or `yarn` on a local machine, depending on your preference.
+[Qazana-CLI](/api/ghost-cli/) is a commandline tool to help you get Qazana installed and configured for use, quickly and easily. The npm module can be installed with `npm` or `yarn` on a local machine, depending on your preference.
 
 ```bash
 npm install ghost-cli@latest -g
@@ -47,7 +47,7 @@ Once installed, you can always run `ghost help` to see a list of available comma
 
 ---
 
-## Install Ghost
+## Install Qazana
 
 In your terminal, `cd` into an empty directory and run the install command:
 
@@ -55,7 +55,7 @@ In your terminal, `cd` into an empty directory and run the install command:
 ghost install local
 ```
 
-Once the install is finished you'll be able to access your new site on `http://localhost:2368` and `http://localhost:2368/ghost` to access Ghost Admin ✨
+Once the install is finished you'll be able to access your new site on `http://localhost:2368` and `http://localhost:2368/ghost` to access Qazana Admin ✨
 
 <mark><strong>That's it! You're done.</strong></mark>
 
@@ -68,12 +68,12 @@ Once the install is finished you'll be able to access your new site on `http://l
 
 ## Starting & Stopping
 
-Ghost runs in a separate background process and remains running until you stop it or restart your computer. So you may find these commands useful for taming it:
+Qazana runs in a separate background process and remains running until you stop it or restart your computer. So you may find these commands useful for taming it:
 
-* `ghost stop` to stop Ghost
-* `ghost start` to start Ghost
+* `ghost stop` to stop Qazana
+* `ghost start` to start Qazana
 * `ghost log` views logs
-* `ghost ls` to list all running Ghost blogs
+* `ghost ls` to list all running Qazana blogs
 
 #### Troubleshooting
 For troubleshooting and errors, try searching this documentation and [FAQ section](/faq/) to find information about common error messages.
@@ -82,17 +82,17 @@ For troubleshooting and errors, try searching this documentation and [FAQ sectio
 
 ## Developing Themes
 
-To work on a [Ghost Handlebars Theme](/api/handlebars-themes/) locally, your custom theme should always be placed in the top-level `/content/themes/` directory.
+To work on a [Qazana Handlebars Theme](/api/handlebars-themes/) locally, your custom theme should always be placed in the top-level `/content/themes/` directory.
 
 
 ### Live reloading
 
-All edits made to Ghost theme files will automatically reload. If you add any **new** files to your theme during development, you'll need to restart Ghost to see the changes take effect.
+All edits made to Qazana theme files will automatically reload. If you add any **new** files to your theme during development, you'll need to restart Qazana to see the changes take effect.
 
 
 ### Validating with GScan
 
-GScan is a tool that validates Ghost themes for compatibility with the latest versions of Ghost. Ghost automatically runs this tool when a theme is uploaded or activated. For development purposes, your can also run these checks yourself by locally installing it.
+GScan is a tool that validates Qazana themes for compatibility with the latest versions of Qazana. Qazana automatically runs this tool when a theme is uploaded or activated. For development purposes, your can also run these checks yourself by locally installing it.
 
 ```bash
 # Install gscan globally
@@ -105,11 +105,11 @@ gscan /path/to/ghost/content/themes/casper
 gscan -z /path/to/downloads/theme.zip
 ```
 
-GScan can also be accessed at [gscan.qazana.net](https://gscan.qazana.net/), where you can sign up for the latest updates as a Ghost theme developer.
+GScan can also be accessed at [gscan.qazana.net](https://gscan.qazana.net/), where you can sign up for the latest updates as a Qazana theme developer.
 
 ## What's next
 
-You've completed a local Ghost install — congrats! You can now put Ghost through its paces and see what it’s all about, or jump right into developing a custom Ghost theme.
+You've completed a local Qazana install — congrats! You can now put Qazana through its paces and see what it’s all about, or jump right into developing a custom Qazana theme.
 
 When you're ready ship your site to production, [follow one of these guides](/setup/).
 

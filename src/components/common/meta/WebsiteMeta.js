@@ -44,7 +44,7 @@ const WebsiteMeta = ({ data, canonical, title, description, image, type }) => (
 
 // "publisher": {
 //     "@type": "Organization",
-//         "name": "Ghost",
+//         "name": "Qazana",
 //             "logo": {
 //         "@type": "ImageObject",
 //             "url": "https://blog.qazana.net/favicon.png",

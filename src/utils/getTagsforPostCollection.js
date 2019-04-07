@@ -3,7 +3,7 @@ import _ from 'lodash'
 import { tags as tagsHelper } from '@tryghost/helpers'
 
 /* getTagsforPostCollection
-* Takes a Ghost post object and a link prefix and returns the used tags
+* Takes a Qazana post object and a link prefix and returns the used tags
 * array for a passed post collection. The tags will not contain internal tags,
 * duplicates, and are sorted ascending by name. The tags array can be used to
 * programmatically generate a tags cloud or menu.

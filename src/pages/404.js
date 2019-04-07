@@ -13,7 +13,7 @@ const NotFoundPage = () => (
             <p className={`${Spirit.p} midgrey`}>You just hit a route that doesn&#39;t exist... the sadness.</p>
             <div className="flex mt5">
                 <Link to="/" className="pa2 dib purple hover-darkgrey link br b--whitegrey">Docs Home</Link>
-                <a href="https://qazana.net/" className="pa2 dib purple hover-darkgrey link">Ghost.org</a>
+                <a href="https://qazana.net/" className="pa2 dib purple hover-darkgrey link">Qazana.org</a>
             </div>
         </div>
     </Layout>

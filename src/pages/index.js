@@ -11,8 +11,8 @@ import { MetaData, getMetaImageUrls } from '../components/common/meta'
 
 const HomePage = ({ data, location }) => {
     // Add meta title and description for this page here to overwrite the site meta data as set in the config
-    const title = `Ghost Docs`
-    const description = `Get familiar with Ghost - the open source professional publishing platform.  Install guides, tutorials, API docs and FAQs.`
+    const title = `Qazana Documentation`
+    const description = `Get familiar with Qazana - the open source professional publishing platform.  Install guides, tutorials, API docs and FAQs.`
     const imageUrl = getMetaImageUrls()
 
     return (
@@ -43,7 +43,7 @@ const HomePage = ({ data, location }) => {
                                     title="Frontend SDKs"
                                     icon="sdks"
                                 >
-                                    Frameworks for working with the Ghost API to build a publication website
+                                    Frameworks for working with the Qazana API to build a publication website
                                 </HomeAPIBox>
                                 <HomeAPIBox
                                     to="/api/#rest-api"
@@ -57,7 +57,7 @@ const HomePage = ({ data, location }) => {
                                     title="Tools"
                                     icon="tools"
                                 >
-                                    Utilities to help build and manage Ghost
+                                    Utilities to help build and manage Qazana
                                 </HomeAPIBox>
                             </Box>
                         </section>
@@ -65,16 +65,16 @@ const HomePage = ({ data, location }) => {
                         <section className="col-12 col-6-ns mt0-ns bt bn-ns b--whitegrey nl5 nr5 nl0-ns nr0-ns ml0-ns mr0-ns pl5 pr5 pl0-ns pr0-ns pt5 pt0-ns ">
                             <Link to="/faq/" className={`${Spirit.h3} link darkgrey hover-midgrey`}>FAQ</Link>
                             <div className="mt3 mt7-ns">
-                                <HomeFAQLink to="/faq/upgrade-to-ghost-2-0/" title="Upgrade to Ghost 2.0">
-                                    Ghost 2.0 was released in September 2018 and the second major upgrade since the platform launched. Learn how to upgrade
+                                <HomeFAQLink to="/faq/upgrade-to-ghost-2-0/" title="Upgrade to Qazana 2.0">
+                                    Qazana 2.0 was released in September 2018 and the second major upgrade since the platform launched. Learn how to upgrade
                                 </HomeFAQLink>
 
                                 <HomeFAQLink to="/faq/using-custom-domains/" title="Using Custom Domains">
-                                    Map any domain you own directly to your Ghost(Pro) publication and make your site more memorable!
+                                    Map any domain you own directly to your Qazana(Pro) publication and make your site more memorable!
                                 </HomeFAQLink>
 
-                                <HomeFAQLink to="/faq/upgrading-from-deprecated-ghost-cli/" title="Upgrading from deprecated Ghost CLI">
-                                    If you are using a deprecated version and need to upgrade in order to upgrade or manage your Ghost site, some extra steps may be required.
+                                <HomeFAQLink to="/faq/upgrading-from-deprecated-ghost-cli/" title="Upgrading from deprecated Qazana CLI">
+                                    If you are using a deprecated version and need to upgrade in order to upgrade or manage your Qazana site, some extra steps may be required.
                                 </HomeFAQLink>
 
                                 <Link to="/faq/" className={`${Spirit.p} midgrey fw5 link hover-purple`}>More FAQ...</Link>

@@ -3,10 +3,10 @@ title: "Install from Source"
 keywords:
     - Developer install
     - Contribution
-    - Contribute to Ghost
+    - Contribute to Qazana
 ---
 
-This guide is for installing a local development copy of Ghost from source, primarily for the purpose of modifying Ghost core
+This guide is for installing a local development copy of Qazana from source, primarily for the purpose of modifying Qazana core
 
 
 ## Prerequisites
@@ -29,7 +29,7 @@ yarn global add knex-migrator grunt-cli ember-cli bower
 
 ## Create GitHub forks
 
-First you'll need to make forks of both the [Ghost](https://github.com/tryghost/ghost) and [Ghost-Admin](https://github.com/tryghost/ghost-admin) respositories. Click on the fork button right at the top, wait for a copy to be created over on your personal GitHub account, and you should be all set!
+First you'll need to make forks of both the [Qazana](https://github.com/tryghost/ghost) and [Qazana-Admin](https://github.com/tryghost/ghost-admin) respositories. Click on the fork button right at the top, wait for a copy to be created over on your personal GitHub account, and you should be all set!
 
 
 ![Fork](/images/setup/fork.gif)
@@ -42,13 +42,13 @@ First you'll need to make forks of both the [Ghost](https://github.com/tryghost/
 
 The next step is to configure the Git repositories for local development
 
-### Ghost Core
+### Qazana Core
 
-The main Ghost repository contains the full Ghost package, including the Admin client and default theme which will also be automatically set up
+The main Qazana repository contains the full Qazana package, including the Admin client and default theme which will also be automatically set up
 
 ```bash
-# First clone Ghost with submodules and make it your working dir
-git clone --recurse-submodules git@github.com:TryGhost/Ghost && cd Ghost
+# First clone Qazana with submodules and make it your working dir
+git clone --recurse-submodules git@github.com:TryGhost/Qazana && cd Qazana
 ```
 
 #### Properly rename your references
@@ -58,15 +58,15 @@ git clone --recurse-submodules git@github.com:TryGhost/Ghost && cd Ghost
 git remote rename origin upstream
 
 # Add your fork as an origin, editing in <YourUsername>!
-git remote add origin git@github.com:<YourUsername>/Ghost.git
+git remote add origin git@github.com:<YourUsername>/Qazana.git
 ```
 
-### Ghost Admin
+### Qazana Admin
 
-Because Ghost-Admin is a submodule repository of the main Ghost repository, the same steps need to be repeated to configure Git here, too.
+Because Qazana-Admin is a submodule repository of the main Qazana repository, the same steps need to be repeated to configure Git here, too.
 
 ```bash
-# Switch to Ghost-Admin dir
+# Switch to Qazana-Admin dir
 cd core/client
 ```
 
@@ -77,16 +77,16 @@ cd core/client
 git remote rename origin upstream
 
 # Add your fork as an origin, editing in <YourUsername>!
-git remote add origin git@github.com:<YourUsername>/Ghost-Admin.git
+git remote add origin git@github.com:<YourUsername>/Qazana-Admin.git
 ```
 
-#### Bring Ghost-Admin up to date
+#### Bring Qazana-Admin up to date
 
 ```bash
 # Quick check that everything is on latest
 git checkout master && git pull upstream master
 
-# Then return to Ghost root directory
+# Then return to Qazana root directory
 cd ../../
 ```
 
@@ -106,14 +106,14 @@ The `setup` task will install dependencies, initialise the database, set up git 
 ---
 
 
-## Start Ghost
+## Start Qazana
 
 ```bash
-# Run Ghost in development mode
+# Run Qazana in development mode
 grunt dev
 ```
 
-<mark><strong>Ghost is now running at</strong> http://localhost:2368/</mark>
+<mark><strong>Qazana is now running at</strong> http://localhost:2368/</mark>
 
 
 ---
@@ -128,7 +128,7 @@ When your working copies become out of date due to upstream changes, this is the
 grunt master
 ```
 
-That's it, you're done with the install! The rest of this guide is about working with your new development copy of Ghost.
+That's it, you're done with the install! The rest of this guide is about working with your new development copy of Qazana.
 
 ---
 
@@ -137,13 +137,13 @@ That's it, you're done with the install! The rest of this guide is about working
 
 When running locally there are a number development utility commands which come in handy for running tests, building packages, and other helpful tasks.
 
-### Running Ghost
+### Running Qazana
 
 The most commonly used commands for running the core codebase locally
 
 ```bash
 grunt dev
-# Default way of running Ghost in development mode
+# Default way of running Qazana in development mode
 # Builds admin files on start & then watches for changes
 
 grunt dev --server
@@ -156,12 +156,12 @@ grunt build
 # Build admin client manually
 
 grunt prod
-# Build full Ghost package for production
+# Build full Qazana package for production
 ```
 
 ### Database tools
 
-Ghost uses it's own tool called `knex-migrator` to manage database migrations
+Qazana uses it's own tool called `knex-migrator` to manage database migrations
 
 ```bash
 knex-migrator reset
@@ -226,10 +226,10 @@ ember test -s -f 'Acceptance: Settings - General' --launch=chrome
 
 ## Troubleshooting
 
-Some common Ghost development problems and their solutions
+Some common Qazana development problems and their solutions
 
-**ERROR: (EADDRINUSE) Cannot start Ghost**<br>
-This error means that Ghost is already running, and you need to stop it
+**ERROR: (EADDRINUSE) Cannot start Qazana**<br>
+This error means that Qazana is already running, and you need to stop it
 
 **ERROR: ENOENT**<br>
 This error means that the mentioned file doesn't exist

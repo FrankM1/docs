@@ -1,7 +1,7 @@
 ---
 title: "Server Recommendations"
-meta_title: "Server Recommendations for Ghost - Core Concepts"
-meta_description: "The recommended options for self-hosting a Ghost publication on your server for the highest security and performance."
+meta_title: "Server Recommendations for Qazana - Core Concepts"
+meta_description: "The recommended options for self-hosting a Qazana publication on your server for the highest security and performance."
 keywords:
     - concepts
     - ghost
@@ -31,9 +31,9 @@ It's a very good idea to disable SSH password based login and *only* connect to 
 
 ## Optimising for scale
 
-The correct way to scale Ghost is by adding a CDN and/or caching layer in front of your Ghost instance. **Clustering or sharding is not supported in any way.**
+The correct way to scale Qazana is by adding a CDN and/or caching layer in front of your Qazana instance. **Clustering or sharding is not supported in any way.**
 
-Every day 2-5 of the top stories on Hacker News are published with Ghost, and to the best of our knowledge no Ghost site has ever fallen over as a result of a traffic spike. Minimal, sensible caching is more than enough.
+Every day 2-5 of the top stories on Hacker News are published with Qazana, and to the best of our knowledge no Qazana site has ever fallen over as a result of a traffic spike. Minimal, sensible caching is more than enough.
 
 
 ## Staying up to date
@@ -42,4 +42,4 @@ Whenever running a public-facing production web server it's **critically importa
 
 If you can't manage these things yourself, ensure that a systems administrator on your team is able to keep everything updated on your behalf.
 
-If you don't have someone to manage your server and don't want to deal with any of the things on this page, consider using **[Ghost(Pro)](https://qazana.net/pricing)**, where all of this is handled on your behalf. It will save a significant amount of time.
+If you don't have someone to manage your server and don't want to deal with any of the things on this page, consider using **[Qazana(Pro)](https://qazana.net/pricing)**, where all of this is handled on your behalf. It will save a significant amount of time.

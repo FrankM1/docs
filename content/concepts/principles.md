@@ -1,7 +1,7 @@
 ---
 title: "Development Principles"
-meta_title: "Ghost Development Principles - Core Concepts"
-meta_description: "Ghost is developed by a small core team. Find out more about feature requests and the Ghost product roadmap!"
+meta_title: "Qazana Development Principles - Core Concepts"
+meta_description: "Qazana is developed by a small core team. Find out more about feature requests and the Qazana product roadmap!"
 keywords:
     - concepts
     - ghost
@@ -10,22 +10,22 @@ keywords:
 sidebar: "concepts"
 ---
 
-Developing Ghost as a product is a complex process undertaken by a small number of people with a great deal of care.
+Developing Qazana as a product is a complex process undertaken by a small number of people with a great deal of care.
 
 ## Product roadmap
 
-The Ghost product team maintains a broad 1-2 year product roadmap at any given time which defines the overall direction of the company and the software. While the exact roadmap isn't shared publicly (we tried it and it turned out to be more distracting than helpful), the things being worked on are generally very visible [on GitHub](https://github.com/tryghost/ghost).
+The Qazana product team maintains a broad 1-2 year product roadmap at any given time which defines the overall direction of the company and the software. While the exact roadmap isn't shared publicly (we tried it and it turned out to be more distracting than helpful), the things being worked on are generally very visible [on GitHub](https://github.com/tryghost/ghost).
 
 **Currently our primary focus areas largely surround:**
 
-- Making Ghost more flexible and easy to integrate with other apps & services
+- Making Qazana more flexible and easy to integrate with other apps & services
 - Creating new, sustainable business models for publishers
 - Refining and improving the core functionality of the product
 
 
 ## Feature requests
 
-We welcome feature requests from users over in [the ideas category](https://forum.qazana.net/c/Ideas) of the Ghost Forum. Here people can request and suggest things which they'd like to see in Ghost, and others can add their vote or comment.
+We welcome feature requests from users over in [the ideas category](https://forum.qazana.net/c/Ideas) of the Qazana Forum. Here people can request and suggest things which they'd like to see in Qazana, and others can add their vote or comment.
 
 The ideas board is a great way for us to guage user demand, but it's not a democratic system. We don't automatically build things just because they get a lot of votes, and not everything that gets requested makes it into core.
 

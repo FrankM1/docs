@@ -21,7 +21,7 @@ export const getAuthorProperties = (primaryAuthor, fetchAuthorData) => {
     authorProfiles = _.compact(authorProfiles)
 
     return {
-        name: fetchAuthorData ? primaryAuthor.name : `Ghost`,
+        name: fetchAuthorData ? primaryAuthor.name : `Qazana`,
         sameAsArray: authorProfiles.length ? `["${_.join(authorProfiles, `", "`)}"]` : null,
         image: fetchAuthorData ? primaryAuthor.profile_image : null,
     }
