@@ -30,7 +30,7 @@ const HomeHeader = () => (
                     to="/setup/"
                     title="Setup Guide"
                     icon="rocket"
-                    color="blue"
+                    color="purple"
                 >
                     Setting up a Ghost site on a server or locally.
                 </HomeHeaderBox>

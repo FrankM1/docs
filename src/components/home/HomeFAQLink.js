@@ -6,7 +6,7 @@ import { Spirit } from '../../styles/spirit-styles'
 
 const HomeFAQLink = ({ to, title, children }) => (
     <Link to={to} className="midgrey home-faq-question link dib pt1 pb5">
-        <h4 className={`${Spirit.h5} blue dib`}>{title} &raquo;</h4>
+        <h4 className={`${Spirit.h5} purple dib`}>{title} &raquo;</h4>
         <p className={`${Spirit.small} mt0`}>{children}</p>
     </Link>
 )

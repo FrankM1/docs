@@ -14,9 +14,9 @@ import { Spirit } from '../../../styles/spirit-styles'
 import { searchConfig } from '../../../../utils/query-config'
 
 const HitTemplate = ({ hit }) => (
-    <Link to={hit.url} className="tdn db pt3 pb3 blue search-result nl5 nr11 pl5 pr11 br3 br--left">
+    <Link to={hit.url} className="tdn db pt3 pb3 purple search-result nl5 nr11 pl5 pr11 br3 br--left">
         <h4 className={`${Spirit.h5} dib`}>
-            <Highlight attribute="title" hit={hit} tagName="mark" className="search-result-page blue" />
+            <Highlight attribute="title" hit={hit} tagName="mark" className="search-result-page purple" />
         </h4>
         <p className={`${Spirit.small} midgrey nudge-bottom--2`}>
             <Snippet attribute="html" hit={hit} className="search-result-snippet" />
@@ -75,7 +75,7 @@ class Results extends React.Component {
             faq: `faq-color b--faq-color`,
             concept: `concept-color b--concept-color`,
             setup: `setup-color b--setup-color`,
-            api: `middarkgrey b--middarkgrey`,
+            api: `black b--black`,
             tutorial: `tutorial-color b--tutorial-color`,
             integration: `integration-color b--integration-color`,
         }

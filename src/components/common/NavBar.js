@@ -10,10 +10,10 @@ const NavBar = ({ theme }) => {
     // Theme definitions
     const themeClasses = {
         dark: {
-            menuItem: `middarkgrey-l1 link hover-blue nowrap`,
+            menuItem: `black-l1 link hover-purple nowrap`,
             logoTheme: `dark`,
-            docsTitleClass: `blue`,
-            searchBox: `bg-darkgrey-searchbar middarkgrey dark-placeholder`,
+            docsTitleClass: `purple`,
+            searchBox: `bg-darkgrey-searchbar black dark-placeholder`,
             icon: `fill-midlightgrey`,
         },
         light: {

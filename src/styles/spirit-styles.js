@@ -28,9 +28,9 @@ export const Spirit = {
 
     // Links
     link: {
-        blue: ` link blue `,
+        purple: ` link purple `,
         green: ` link green `,
-        middarkgrey: ` link middarkgrey dim `,
+        middarkgrey: ` link black dim `,
         white: ` link white dim `,
     },
 

@@ -15,7 +15,7 @@ const FeedbackForm = ({ location }) => {
                 </div>
                 <div className="flex-shrink-0">
                     <a
-                        className="typeform-share button mt3 ml7 pa3 pl7 pr7 button-blue white tdn bn whitney f8"
+                        className="typeform-share button mt3 ml7 pa3 pl7 pr7 button-purple white tdn bn whitney f8"
                         href={formTarget}
                         data-mode="popup"
                         data-hide-headers="true"

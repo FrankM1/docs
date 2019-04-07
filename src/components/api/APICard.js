@@ -7,7 +7,7 @@ const APICard = ({ to, href, icon, img, iconClass, children }) => (
     <Box
         to={to || null}
         href={href}
-        className="br4 flex flex-column justify-between items-center middarkgrey pa2 pt8 pb5 tdn"
+        className="br4 flex flex-column justify-between items-center black pa2 pt8 pb5 tdn"
         elevation={!href && !to ? `1` : `2`}
     >
         {icon ? <div className="w10 h10 flex justify-center items-center"><Icon name={icon} className={`w10 h10 mb4 ${iconClass}`}></Icon></div> : null}

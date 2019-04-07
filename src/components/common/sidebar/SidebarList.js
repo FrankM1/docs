@@ -4,8 +4,8 @@ import PropTypes from 'prop-types'
 import SidebarLink from './SidebarLink'
 
 const SidebarList = ({ items, location }) => {
-    const linkClasses = `midgrey fw4 hover-blue-l2`
-    const activeLinkClasses = `sidebarlink-active blue fw6`
+    const linkClasses = `midgrey fw4 hover-purple-l2`
+    const activeLinkClasses = `sidebarlink-active purple fw6`
 
     return (
         <ul className="relative sidebar-list ma0 pa0 list mb5 pl6 mt1">

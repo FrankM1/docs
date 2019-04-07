@@ -251,8 +251,8 @@ kbd {
     border-radius: 1.2rem;
 }
 
-.hover-underline-blue:hover {
-    box-shadow: color-mod(var(--blue) a(0.5)) 0 -1px 0 inset;
+.hover-underline-purple:hover {
+    box-shadow: color-mod(var(--purple) a(0.5)) 0 -1px 0 inset;
     text-decoration: none;
 }
 
@@ -340,7 +340,7 @@ kbd {
 } */
 
 .prevnext-hover:hover p {
-    box-shadow: color-mod(var(--blue-l2) l(+10%) s(-10%)) 0 -1px 0 inset;
+    box-shadow: color-mod(var(--purple-l2) l(+10%) s(-10%)) 0 -1px 0 inset;
     transition: all 0.2s ease;
 }
 
@@ -349,12 +349,12 @@ kbd {
 }
 
 .button-blue {
-    background: linear-gradient(to top, color-mod(var(--blue) l(-15%) s(+16%)) 0%, color-mod(var(--blue) l(+8%) s(+6%)) 100%);
+    background: linear-gradient(to top, color-mod(var(--purple) l(-15%) s(+16%)) 0%, color-mod(var(--purple) l(+8%) s(+6%)) 100%);
     font-weight: 500;
     border-radius: 4px;
     box-sizing: border-box;
     line-height: 1.0em;
-    box-shadow: 0 4px 14px -6px color-mod(var(--blue) l(-20%) s(-15%) a(0.25));
+    box-shadow: 0 4px 14px -6px color-mod(var(--purple) l(-20%) s(-15%) a(0.25));
     cursor: pointer;
     font-size: 1.3rem;
     position: relative;
@@ -457,13 +457,13 @@ kbd {
 
 .search-result-page mark {
     background: none;
-    color: color-mod(var(--blue) l(-25%));
-    /* box-shadow: color-mod(var(--blue) a(0.5)) 0 -1px 0 inset; */
+    color: color-mod(var(--purple) l(-25%));
+    /* box-shadow: color-mod(var(--purple) a(0.5)) 0 -1px 0 inset; */
 }
 
 .search-result-snippet em {
     font-style: unset;
-    box-shadow: color-mod(var(--blue) a(0.8)) 0 -1px 0 inset;
+    box-shadow: color-mod(var(--purple) a(0.8)) 0 -1px 0 inset;
     /* color: var(--middarkgrey-l1); */
     font-weight: 500;
 }
@@ -532,13 +532,13 @@ kbd {
 
 .dark-h4-hover:hover h4,
 .api-box:hover h4 {
-    color: var(--blue);
+    color: var(--purple);
     transition: all 0.2s ease;
 }
 
 .api-box:hover svg g,
 .api-box:hover svg path {
-    stroke: var(--blue);
+    stroke: var(--purple);
     transition: all 0.2s ease;
 }
 
@@ -547,7 +547,7 @@ kbd {
 }
 
 .home-faq-question:hover h4 {
-    box-shadow: color-mod(var(--blue) a(0.5)) 0 -1px 0 inset;
+    box-shadow: color-mod(var(--purple) a(0.5)) 0 -1px 0 inset;
 }
 
 /* Integrations
@@ -565,7 +565,7 @@ kbd {
 @media (--breakpoint-large) { .grid-integrations-index { grid-template-columns: repeat(8, 1fr); } }
 
 .gh-integration-sidebar a:hover {
-    color: var(--blue) !important;
+    color: var(--purple) !important;
 }
 
 .gh-integration-card {
@@ -657,7 +657,7 @@ kbd {
     left: -2.4rem;
     bottom: 0.8rem;
     width: 4px;
-    background: var(--blue);
+    background: var(--purple);
     border-radius: 0 2px 2px 0;
 }
 
@@ -698,7 +698,7 @@ kbd {
     left: calc(-2.4rem - 1px);
     width: 1px;
     height: 100%;
-    background: linear-gradient(to bottom, var(--whitegrey) 0%, var(--blue) 50%,var(--whitegrey) 100%);
+    background: linear-gradient(to bottom, var(--whitegrey) 0%, var(--purple) 50%,var(--whitegrey) 100%);
 } */
 
 
@@ -866,7 +866,7 @@ kbd {
 }
 
 .toc-list-container ol a:hover {
-    color: var(--blue-l2);
+    color: var(--purple-l2);
     text-decoration: none;
 }
 
@@ -883,7 +883,7 @@ kbd {
     left: 0;
     bottom: 7px;
     width: 1px;
-    background: #e5eff5;
+    background: var(--whitegrey);
 }
 
 .toc-list-container .is-active-link {
@@ -892,7 +892,7 @@ kbd {
 }
 
 .toc-list-container.lefty .is-active-link {
-    color: var(--blue);
+    color: var(--purple);
 }
 
 .toc-list-container ol ol li {

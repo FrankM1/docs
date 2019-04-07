@@ -26,7 +26,7 @@ pre[class*="language-"] {
 }
 
 a > code[class*="language-"] {
-	color: var(--blue);
+	color: var(--purple);
 }
 
 .token.comment,

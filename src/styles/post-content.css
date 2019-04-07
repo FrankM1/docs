@@ -157,17 +157,17 @@
 }
 
 .post-content a {
-    color: var(--blue-d2);
+    color: var(--purple-d2);
     word-break: break-word;
     text-decoration: none;
-    box-shadow: var(--blue) 0 -1px 0 inset;
+    box-shadow: var(--purple) 0 -1px 0 inset;
     transition: all 0.2s ease;
 }
 
 .post-content a:hover {
-    color: #2497d6;
+    color: var(--purple-d3);
     text-decoration: none;
-    box-shadow: var(--blue) 0 -1px 0 inset;
+    box-shadow: var(--purple) 0 -1px 0 inset;
 }
 
 .post-content .gatsby-resp-image-link:hover,
@@ -337,7 +337,7 @@ Usage (In Ghost editor):
     font-style: italic;
     line-height: var(--vr-5);
     margin: var(--vr-6) 0 0;
-    color: var(--blue);
+    color: var(--purple);
 }
 @media (max-width: 500px) {
     .post-content h5 {
@@ -577,7 +577,7 @@ Usage (In Ghost editor):
 }
 
 .footnote-backref {
-    color: var(--blue) !important;
+    color: var(--purple) !important;
     font-size: 1.2rem;
     font-weight: bold;
     text-decoration: none !important;

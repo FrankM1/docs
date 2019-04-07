@@ -32,7 +32,7 @@ const SidebarNav = ({ sidebar, location }) => {
                                 location={location}
                             />
                         </>
-                        : <h4 className="f5 fw5 link pa0 ma0">{(group.items[0].link ? <SidebarLink link={group.items[0].link} title={group.group} linkClasses="midgrey hover-blue-l2 link" /> : group.group)}</h4>}
+                        : <h4 className="f5 fw5 link pa0 ma0">{(group.items[0].link ? <SidebarLink link={group.items[0].link} title={group.group} linkClasses="midgrey hover-purple-l2 link" /> : group.group)}</h4>}
                 </div>
             ))}
         </nav>

@@ -77,7 +77,7 @@ const HomePage = ({ data, location }) => {
                                     If you are using a deprecated version and need to upgrade in order to upgrade or manage your Ghost site, some extra steps may be required.
                                 </HomeFAQLink>
 
-                                <Link to="/faq/" className={`${Spirit.p} midgrey fw5 link hover-blue`}>More FAQ...</Link>
+                                <Link to="/faq/" className={`${Spirit.p} midgrey fw5 link hover-purple`}>More FAQ...</Link>
                             </div>
                         </section>
                     </div>

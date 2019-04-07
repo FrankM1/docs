@@ -92,17 +92,17 @@
     margin: var(--vr-5) 0 0;
     text-transform: uppercase;
 }
-.typography p, 
-.typography ul, 
-.typography ol, 
-.typography pre, 
-.typography table, 
+.typography p,
+.typography ul,
+.typography ol,
+.typography pre,
+.typography table,
 .typography blockquote {
     margin: var(--vr-2) 0 0;
 }
-.typography ul ul, 
-.typography ol ol, 
-.typography ul ol, 
+.typography ul ul,
+.typography ol ol,
+.typography ul ol,
 .typography ol ul {
     margin: 0px;
 }
@@ -112,16 +112,16 @@
     border: 1px solid;
     margin: -1px 0;
 }
-.typography a, 
-.typography b, 
-.typography i, 
-.typography strong, 
-.typography em, 
-.typography small, 
+.typography a,
+.typography b,
+.typography i,
+.typography strong,
+.typography em,
+.typography small,
 .typography code {
     line-height: 0;
 }
-.typography sub, 
+.typography sub,
 .typography sup {
     line-height: 0;
     position: relative;
@@ -132,4 +132,12 @@
 }
 .typography sub {
     bottom: -0.25em;
+}
+
+.whitney {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.midgrey {
+    color: #4e4e4e;
 }

@@ -8,7 +8,7 @@ const SetupBox = ({ to, href, icon, iconClass, headingClass, title, children }) 
     <Box
         to={to}
         href={href}
-        className="col-12 col-6-ns col-4-l pa8 tdn middarkgrey setup-box-min-height"
+        className="col-12 col-6-ns col-4-l pa8 tdn black setup-box-min-height"
         radius="4"
     >
         <Icon name={icon} className={iconClass} />
