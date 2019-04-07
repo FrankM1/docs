@@ -2,6 +2,19 @@ const path = require(`path`)
 const _ = require(`lodash`)
 const { allMarkdownPosts } = require(`../utils/node-queries`)
 
+module.exports.createRedirects = ({ actions }) => {
+    const { createRedirect } = actions
+
+    // The /concepts page doesn't exist, we need to redirect to
+    // the first post of this section
+    createRedirect({
+        fromPath: `/concepts`,
+        isPermanent: true,
+        redirectInBrowser: true,
+        toPath: `/concepts/introduction/`,
+    })
+}
+
 module.exports.createMarkdownPages = async ({ graphql, actions }) => {
     const { createPage } = actions
     const queryPromises = []

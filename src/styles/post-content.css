@@ -96,7 +96,7 @@
 
 .post-content blockquote {
     padding: 0 0 0 1.5em;
-    border-left: #3eb0ef 2px solid;
+    border-left: var(--purple) 2px solid;
 }
 
 .post-content blockquote p:last-child {

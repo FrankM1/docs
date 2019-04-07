@@ -941,7 +941,7 @@ kbd {
     left: -2.4rem;
     bottom: .8rem;
     width: 4px;
-    background: #3eb0ef;
+    background: var(--purple);
     border-radius: 0 2px 2px 0;
 }
 
