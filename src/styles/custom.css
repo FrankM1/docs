@@ -113,7 +113,7 @@ kbd {
 }
 @media (--breakpoint-not-small) { .w-sidebar-ns { width: 22rem; } }
 @media (--breakpoint-medium) { .w-sidebar-m { width: 22rem; } }
-@media (--breakpoint-large) { .w-sidebar-l { width: 32rem; } }
+@media (--breakpoint-large) { .w-sidebar-l { width: 22rem; } }
 
 .h0 {
     height: 0;

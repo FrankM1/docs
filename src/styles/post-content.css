@@ -238,7 +238,7 @@ Usage (In Qazana editor):
 .post-content h4,
 .post-content h5,
 .post-content h6 {
-    color: inherit;
+    color: black;
     outline: none;
 }
 
