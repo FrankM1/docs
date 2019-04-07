@@ -12,7 +12,7 @@ sidebar: "concepts"
 
 Take part in responsible disclosure to the Ghost Security team
 
-Potential security vulnerabilities can be reported directly to us at `security@ghost.org`. The Ghost Security Team communicates privately and works in a secured, isolated repository for tracking, testing, and resolving security-related issues.
+Potential security vulnerabilities can be reported directly to us at `security@qazana.net`. The Ghost Security Team communicates privately and works in a secured, isolated repository for tracking, testing, and resolving security-related issues.
 
 
 ## Responsible disclosure guidelines
@@ -26,7 +26,7 @@ The Ghost Security team is committed to working with security researchers to ver
 Security issues always take precedence over bug fixes and feature work. We can and do mark releases as "urgent" if they contain serious security fixes.
 
 We will publicly acknowledge any report that results in a security commit to https://github.com/TryGhost/Ghost
-  
+
 
 ## Issue triage
 
@@ -62,7 +62,7 @@ We take any attack vector where an untrusted user is able to inject malicious co
 
 ## How reports are handled
 
-If you report a vulnerability to us through the security@ghost.org mailing list, we will:
+If you report a vulnerability to us through the security@qazana.net mailing list, we will:
 
 - Acknowledge your email within a week
 - Investigate and let you know our findings within two weeks

@@ -28,7 +28,7 @@ When you're ready, check out the full **[Ghost Contributing Guide](https://githu
 
 The primary way to contribute to Ghost is by writing code, but if you're not a developer there are still ways you can help. We always need help with:
 
-- Helping our Ghost users on [the forum](https://forum.ghost.org)
+- Helping our Ghost users on [the forum](https://forum.qazana.net)
 - Creating [tutorials](/tutorials/) and [integration guides](/integrations/)
 - Improving our [documentation](https://github.com/tryghost/docs/) _(what you're reading now!)_
 - Testing and quality assurance
@@ -45,7 +45,7 @@ As a non-profit organisation we're always grateful to receive any and all donati
 
 #### Partnerships
 
-We're very [happy to partner](https://ghost.org/partners/) with startups and companies who are able to provide Ghost with credit, goods and services which help us build free, open software for everyone. Please reach out to us `hello@ghost.org` if you're interested in partnering with us to help Ghost.
+We're very [happy to partner](https://qazana.net/partners/) with startups and companies who are able to provide Ghost with credit, goods and services which help us build free, open software for everyone. Please reach out to us `hello@qazana.net` if you're interested in partnering with us to help Ghost.
 
 
 <h4>Open Collective <a style="display:inline-block;" href="https://opencollective.com/ghost"><img style="margin:0 0 -3px 5px;" src="https://opencollective.com/ghost/backers/badge.svg" alt="OpenCollective" /></a></h4>

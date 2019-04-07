@@ -105,7 +105,7 @@ gscan /path/to/ghost/content/themes/casper
 gscan -z /path/to/downloads/theme.zip
 ```
 
-GScan can also be accessed at [gscan.ghost.org](https://gscan.ghost.org/), where you can sign up for the latest updates as a Ghost theme developer.
+GScan can also be accessed at [gscan.qazana.net](https://gscan.qazana.net/), where you can sign up for the latest updates as a Ghost theme developer.
 
 ## What's next
 

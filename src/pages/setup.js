@@ -35,7 +35,7 @@ const SetupPage = ({ data, location }) => {
 
                 <div className={`${Spirit.page.xl} mt-vw3`}>
                     <section className="grid-12 gutter-row-20 gutter-20-ns gutter-36-l">
-                        <SetupBox href="https://ghost.org/pricing/" title="Ghost(Pro)" icon="ghost-pro-logo" iconClass="w9 h9" headingClass="mt2">
+                        <SetupBox href="https://qazana.net/pricing/" title="Ghost(Pro)" icon="ghost-pro-logo" iconClass="w9 h9" headingClass="mt2">
                             <strong>Fully managed PaaS</strong> with 1-click deployment, worldwide CDN, backups, upgrades & security
                         </SetupBox>
 

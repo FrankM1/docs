@@ -25,7 +25,7 @@ The Ghost product team maintains a broad 1-2 year product roadmap at any given t
 
 ## Feature requests
 
-We welcome feature requests from users over in [the ideas category](https://forum.ghost.org/c/Ideas) of the Ghost Forum. Here people can request and suggest things which they'd like to see in Ghost, and others can add their vote or comment. 
+We welcome feature requests from users over in [the ideas category](https://forum.qazana.net/c/Ideas) of the Ghost Forum. Here people can request and suggest things which they'd like to see in Ghost, and others can add their vote or comment.
 
 The ideas board is a great way for us to guage user demand, but it's not a democratic system. We don't automatically build things just because they get a lot of votes, and not everything that gets requested makes it into core.
 

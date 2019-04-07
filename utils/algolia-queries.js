@@ -1,19 +1,7 @@
-const { allGhostPosts, allMarkdownPosts } = require(`./node-queries`)
-const { ghostQueryConfig, markdownQueryConfig } = require(`./query-config`)
+const { allMarkdownPosts } = require(`./node-queries`)
+const { markdownQueryConfig } = require(`./query-config`)
 const { fragmentTransformer } = require(`./algolia-transforms`)
 const urlUtils = require(`./urls`)
-
-const algoliaGhostFields = `
-    objectID:id
-    slug
-    title
-    html
-    image: feature_image
-    tags {
-        name
-        slug
-    }
-`
 
 const algoliaMarkdownFields = `
     objectID:id
@@ -42,22 +30,6 @@ const mdNodeMap = ({ node }) => {
     return node
 }
 
-const ghostQueries = ghostQueryConfig.map(({ tag, section, indexName }) => {
-    return {
-        query: allGhostPosts(tag, algoliaGhostFields),
-        indexName,
-        transformer: ({ data }) => data
-            .allGhostPost.edges
-            .map(({ node }) => {
-                // @TODO is there some other way to do this?!
-                node.section = section
-                node.url = urlUtils.urlForGhostPost(node, section)
-                return node
-            })
-            .reduce(fragmentTransformer, []),
-    }
-})
-
 const mdQueries = markdownQueryConfig.map(({ section, indexName }) => {
     return {
         query: allMarkdownPosts(section, algoliaMarkdownFields),
@@ -70,34 +42,5 @@ const mdQueries = markdownQueryConfig.map(({ section, indexName }) => {
     }
 })
 
-// Uncomment these for testing, to temporarily only do this for a small number of posts
-// let testQueryArr = [{
-//     query: `
-//     {
-//         allMarkdownRemark(
-//             sort: {order: ASC, fields: [frontmatter___date]},
-//             filter: {fields: {
-//                 slug: {eq: "/install/source/"},
-//             }}
-//         ) {
-//             edges {
-//                 node {
-//                     ${algoliaMarkdownFields}
-//                 }
-//             }
-//         }
-//     }
-//     `,
-//     indexName: `setup`,
-//     transformer: ({ data }) => data
-//         .allMarkdownRemark.edges
-//         .map(mdNodeMap)
-//         .reduce(fragmentTransformer, []),
-// }]
-
-// module.exports = testQueryArr
-// module.exports = [ghostQueries[1]]
-// module.exports = [mdQueries[1]]
-
 // The REAL DEAL
-module.exports = ghostQueries.concat(mdQueries)
+module.exports = mdQueries

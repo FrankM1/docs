@@ -63,7 +63,7 @@ Because MobileDoc is **Just JSON**™️, it's extremely portable and can be tra
 
 ![MobileDoc](../images/concepts/mobiledoc.png)
 
-Even the dynamic cards mentioned above are a part of MobileDoc! It's a fast growing open standard which is used by [Ghost](https://ghost.org), [Bustle](https://bustle.com), and an increasing number of other popular platforms and publications.
+Even the dynamic cards mentioned above are a part of MobileDoc! It's a fast growing open standard which is used by [Ghost](https://qazana.net), [Bustle](https://bustle.com), and an increasing number of other popular platforms and publications.
 
 
 ## Sample API data

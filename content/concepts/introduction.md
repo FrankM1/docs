@@ -6,15 +6,15 @@ keywords:
     - concepts
     - ghost
     - publishing
-    - platform 
+    - platform
 sidebar: "concepts"
 ---
 
 Ghost is an open source, professional publishing platform built on a modern Node.js technology stack — designed for teams who need power, flexibility and performance.
 
-Hitting the right balance of needs has led Ghost to be used in production by organisations including Apple, Sky News, DuckDuckGo, Mozilla, OpenAI, Square, CloudFlare, Tinder, the Bitcoin Foundation and [many more](https://ghost.org/customers/).
+Hitting the right balance of needs has led Ghost to be used in production by organisations including Apple, Sky News, DuckDuckGo, Mozilla, OpenAI, Square, CloudFlare, Tinder, the Bitcoin Foundation and [many more](https://qazana.net/customers/).
 
-Every day Ghost powers some of the most-read stories on the internet, serving hundreds of millions of requests across tens of thousands of sites. 
+Every day Ghost powers some of the most-read stories on the internet, serving hundreds of millions of requests across tens of thousands of sites.
 
 ## How is Ghost different?
 
@@ -132,7 +132,7 @@ The first question most people have is, of course, how is Ghost different from e
 
 **In short:** Other open platforms are generally old, slow and bloated, while other closed platforms give you absolutely no control or ownership of your content. Ghost provides the best of both worlds, and more.
 
-Still after a more detailed comparison? We've got some in-depth articles comparing Ghost to [WordPress](https://ghost.org/vs/wordpress/), [Medium](https://ghost.org/vs/medium/) and [Tumblr](https://ghost.org/vs/tumblr/).
+Still after a more detailed comparison? We've got some in-depth articles comparing Ghost to [WordPress](https://qazana.net/vs/wordpress/), [Medium](https://qazana.net/vs/medium/) and [Tumblr](https://qazana.net/vs/tumblr/).
 
 
 ## Background
@@ -141,26 +141,26 @@ Ghost was created by [John O'Nolan](https://twitter.com/johnonolan) and [Hannah 
 
 Previously, John was a core contributor of WordPress and watched as the platform grew more complicated and less focused over time. Ghost started out as a little idea to be the antidote to that pain, and quickly grew in popularity as the demand for a modern open source solution became evident.
 
-Today, Ghost is one of the most popular open source projects in the world - the **#1** CMS [on GitHub](https://github.com/tryghost/ghost) - and is used in production by millions of people. 
+Today, Ghost is one of the most popular open source projects in the world - the **#1** CMS [on GitHub](https://github.com/tryghost/ghost) - and is used in production by millions of people.
 
-More than anything, we approach building Ghost to create the product we've always wanted to use, the company we've always wanted to do business with, and the environment we've always wanted to work in. 
+More than anything, we approach building Ghost to create the product we've always wanted to use, the company we've always wanted to do business with, and the environment we've always wanted to work in.
 
 So, we do things a little differently to most others:
 
 #### Independent structure
-Ghost is structured as a [non-profit organisation](https://ghost.org/about) to ensure it can legally never be sold and will always remain independent, building products based on the needs of its users - _not_ the whims of investors looking for 💰 returns.
+Ghost is structured as a [non-profit organisation](https://qazana.net/about) to ensure it can legally never be sold and will always remain independent, building products based on the needs of its users - _not_ the whims of investors looking for 💰 returns.
 
 #### Sustainable business
 
-While the software we release is free, we also sell [premium managed hosting](https://ghost.org/pricing/) for it, which gives the non-profit organisation a sustainable business model and allows it to be 100% self-funded.
+While the software we release is free, we also sell [premium managed hosting](https://qazana.net/pricing/) for it, which gives the non-profit organisation a sustainable business model and allows it to be 100% self-funded.
 
 #### Distributed team
 
-Having a sustainable business allows us to hire open source contributors to work on Ghost full-time, and we do this [entirely remotely](https://ghost.org/about/#careers). The core Ghost team is fully distributed and live wherever they choose.
+Having a sustainable business allows us to hire open source contributors to work on Ghost full-time, and we do this [entirely remotely](https://qazana.net/about/#careers). The core Ghost team is fully distributed and live wherever they choose.
 
 #### Transparent by default
 
-We share [our revenue](https://ghost.org/about) transparently and [our code](https://github.com/tryghost) openly so anyone can verify what we do and how we do it. No cloaks or daggers. 
+We share [our revenue](https://qazana.net/about) transparently and [our code](https://github.com/tryghost) openly so anyone can verify what we do and how we do it. No cloaks or daggers.
 
 #### Unconditional open source
 

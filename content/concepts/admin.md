@@ -19,7 +19,7 @@ Traditionally, people writing content and people writing code rarely agree on th
 
 Thanks to its decoupled architecture Ghost is able to have the best of both worlds. Ghost-Admin is a completely independent client application to the Ghost Core API which doesn't have any impact on performance. And, writers don't need to suffer their way through learning Git just to publish a new post.
 
-Great for editors. Great for developers. Also available as [Desktop App](https://ghost.org/downloads/).
+Great for editors. Great for developers. Also available as [Desktop App](https://qazana.net/downloads/).
 
 ![Ghost Admin](../images/concepts/ghost-admin.png)
 

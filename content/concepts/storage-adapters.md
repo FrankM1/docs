@@ -4,21 +4,21 @@ meta_title: "Custom Storage Adapters for Ghost"
 meta_description: "Find out how to use custom storage adapters to store your publication's images to externally on S3, Google Drive, Azure, GitHub, Imgur and more."
 keywords:
     - storage
-    - concepts 
+    - concepts
     - ghost
     - publishing
 sidebar: "concepts"
 ---
 
-It's possible to send your publication's images to a 3rd party service, CDN or database using a custom storage module. 
+It's possible to send your publication's images to a 3rd party service, CDN or database using a custom storage module.
 
 ## Overview
-The storage layer is used to store images from an upload admin UI, from the API, and also when images are included in a zip file uploaded to the importer. Using a custom storage module allows you to change where images are stored without changing Ghost core. 
+The storage layer is used to store images from an upload admin UI, from the API, and also when images are included in a zip file uploaded to the importer. Using a custom storage module allows you to change where images are stored without changing Ghost core.
 
 
 ## Using a custom storage adapter
 
-By default Ghost stores images on your filesystem. The default location is the Ghost content path in your Ghost folder under `content/images`, or an alternative custom content path that you have configured. 
+By default Ghost stores images on your filesystem. The default location is the Ghost content path in your Ghost folder under `content/images`, or an alternative custom content path that you have configured.
 
 In order to use a custom storage adapter, your custom configuration file needs to be updated to provide config for your new storage module and set it as active:
 
@@ -88,7 +88,7 @@ module.exports = MyCustomAdapter;
 
 #### Required methods
 
-Your custom storage adapter must implement five required functions: 
+Your custom storage adapter must implement five required functions:
 * `save` - The `.save()` method stores the image and returns a promise which resolves the path from which the image should be requested in future.
 * `exists` - Used by the base storage adapter to check whether a file exists or not
 * `serve` - Ghost calls `.serve()` as part of its middleware stack, and mounts the returned function as the middleware for serving images
@@ -104,7 +104,7 @@ class MyCustomAdapter extends BaseAdapter{
   constructor() {
     super();
   }
-  
+
   exists() {
 
   }
@@ -135,5 +135,4 @@ module.exports = MyCustomAdapter;
 ## Summary
 You have discovered how to use a custom storage module to replace the storage layer which handles images with custom code.
 
-It's good practise to create a public GitHub repository to make your module available for others and you can share your new module in our [forum](https://forum.ghost.org/).
-
+It's good practise to create a public GitHub repository to make your module available for others and you can share your new module in our [forum](https://forum.qazana.net/).

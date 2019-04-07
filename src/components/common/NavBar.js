@@ -28,7 +28,7 @@ const NavBar = ({ theme }) => {
     return (
         <nav className={`${Spirit.page.xl} flex flex-auto flex-nowrap items-center justify-between pt2 pb2`} data-cy="header-navigation">
             <div className="flex items-center pt3 pb3 nudge-bottom--2 w-sidebar-l pr8">
-                <a href="https://ghost.org" className="nudge-top--3">
+                <a href="https://qazana.net" className="nudge-top--3">
                     <Logo theme={theme} />
                 </a>
                 <Link to="/" className={`${themeClasses[theme].docsTitleClass} gh-nav-logo-suffix relative ma0 ml4 pa0 pl4 f6 lh-1-5 fw4 link nudge-top--1`}>Docs</Link>

@@ -12,7 +12,7 @@ export const getAuthorProperties = (primaryAuthor, fetchAuthorData) => {
         )
     } else {
         authorProfiles.push(
-            `https://ghost.org/`,
+            `https://qazana.net/`,
             `https://twitter.com/ghost/`,
             `https://www.facebook.com/ghost/`
         )

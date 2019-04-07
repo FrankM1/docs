@@ -1,8 +1,7 @@
 module.exports = {
     'parser': 'babel-eslint',
-    plugins: ['ghost', 'react'],
+    plugins: ['react'],
     extends: [
-        'plugin:ghost/test',
         'plugin:react/recommended'
     ],
     "globals": {

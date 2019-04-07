@@ -68,7 +68,7 @@ const APIPage = ({ data, location }) => {
                         <div className={sectionStyles.cardContainer}>
                             <APICard to="/api/ghost-cli/" icon="ghost-cli-logo">Ghost-CLI</APICard>
                             <APICard to="/api/migration/" icon="migration-logo">Migration</APICard>
-                            <APICard href="https://gscan.ghost.org" icon="gscan-logo">GScan</APICard>
+                            <APICard href="https://gscan.qazana.net" icon="gscan-logo">GScan</APICard>
                             <APICard to="/api/javascript/sdk/" icon="javascript-logo">JavaScript SDK</APICard>
                         </div>
                     </div>

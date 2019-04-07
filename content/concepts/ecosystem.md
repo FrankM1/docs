@@ -21,7 +21,7 @@ Ghost ships with a web based admin interface, but there's also a selection of na
 
 ### Ghost Desktop
 
-Available for Mac, PC, and Linux. [Ghost Desktop](https://ghost.org/downloads/) allows you to access and edit your Ghost site without ever needing to log in again.
+Available for Mac, PC, and Linux. [Ghost Desktop](https://qazana.net/downloads/) allows you to access and edit your Ghost site without ever needing to log in again.
 
 ### Ghost Android
 
@@ -37,11 +37,11 @@ Of course open source software is never just about the technology, more than any
 
 ### The blog
 
-For long-form news and announcements the best place to keep up to date with everything happening is [our blog](https://blog.ghost.org). There's an [RSS feed](https://blog.ghost.org/rss/) and also [a newsletter](https://blog.ghost.org/newsletter/) 📬
+For long-form news and announcements the best place to keep up to date with everything happening is [our blog](https://blog.qazana.net). There's an [RSS feed](https://blog.qazana.net/rss/) and also [a newsletter](https://blog.qazana.net/newsletter/) 📬
 
 ### Official forum
 
-The [official Ghost forum](https://forum.ghost.org) is the best place to find other Ghost users and developers. Whether you're looking for some advice or you need help with a tricky development problem. There's almost always someone around, as well as a wealth of past questions/answers in the searchable archives.
+The [official Ghost forum](https://forum.qazana.net) is the best place to find other Ghost users and developers. Whether you're looking for some advice or you need help with a tricky development problem. There's almost always someone around, as well as a wealth of past questions/answers in the searchable archives.
 
 ### Social media
 
@@ -51,7 +51,7 @@ We maintain a handful of social media accounts to keep in touch with people dire
 - [GitHub](https://github.com/tryghost/ghost) - ⭐️ Star the repository to bookmark
 - [Twitter](https://twitter.com/ghost) - 🐧 Regular shortform updates
 - [Facebook](https://www.facebook.com/ghost) - 👩🏻‍💻 Occasional big news
-- [Instagram](https://www.instagram.com/ghost) - 🤫 New thing coming soon 
+- [Instagram](https://www.instagram.com/ghost) - 🤫 New thing coming soon
 
 ---
 
@@ -65,7 +65,7 @@ The [migration docs](/api/migration/) contain details on all available automated
 
 ## Finding themes
 
-You'll find a wide range of pre-made Ghost themes for a variety of use-cases over on the [Ghost Marketplace](https://marketplace.ghost.org), which serves as an official directory of curated highlights. However, you can also find an even larger range of Ghost themes for sale on [ThemeForest](https://themeforest.net/category/blogging/ghost-themes) and [Creative Market](https://creativemarket.com/themes/ghost).
+You'll find a wide range of pre-made Ghost themes for a variety of use-cases over on the [Ghost Marketplace](https://marketplace.qazana.net), which serves as an official directory of curated highlights. However, you can also find an even larger range of Ghost themes for sale on [ThemeForest](https://themeforest.net/category/blogging/ghost-themes) and [Creative Market](https://creativemarket.com/themes/ghost).
 
 It's also pretty straightforward to convert themes for most other platforms to be compatible with Ghost, and you can always use a completely independent front-end or framework if that's your jam.
 
@@ -73,7 +73,7 @@ It's also pretty straightforward to convert themes for most other platforms to b
 
 ## Example Ghost sites
 
-If you're looking for a great overview of other sites in the world built with Ghost, you'll probably want to check out our [Customer Showcase](https://ghost.org/customers/) gallery.
+If you're looking for a great overview of other sites in the world built with Ghost, you'll probably want to check out our [Customer Showcase](https://qazana.net/customers/) gallery.
 
 ---
 

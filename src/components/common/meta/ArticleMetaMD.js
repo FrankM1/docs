@@ -50,7 +50,7 @@ const ArticleMetaMD = ({ data, canonical }) => {
                             "@type": "Person",
                             "name": "Ghost",
                             "sameAs": [
-                                "https://ghost.org/",
+                                "https://qazana.net/",
                                 "https://www.facebook.com/ghost/",
                                 "https://twitter.com/tryghost/"
                             ]
@@ -83,7 +83,7 @@ const ArticleMetaMD = ({ data, canonical }) => {
 //     "name": "Ghost",
 //     "logo": {
 //         "@type": "ImageObject",
-//         "url": "https://blog.ghost.org/favicon.png",
+//         "url": "https://blog.qazana.net/favicon.png",
 //         "width": 60,
 //         "height": 60
 //     }

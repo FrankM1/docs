@@ -12,12 +12,6 @@ require(`dotenv`).config({
     path: `.env.${process.env.NODE_ENV}`,
 })
 
-if (!process.env.GHOST_API_URL || !process.env.GHOST_API_KEY) {
-    throw new Error(
-        `GHOST_API_URL and GHOST_API_KEY are required to build. Check the CONTRIBUTING guide.`
-    )
-}
-
 const SERVICE_WORKER_KILL_SWITCH = (process.env.SERVICE_WORKER_KILL_SWITCH === `true`) || false
 
 const plugins = [
@@ -51,14 +45,6 @@ const plugins = [
                         withWebp: true,
                     },
                 },
-                {
-                    resolve: `gatsby-remark-embed-snippet`,
-                    options: {
-                        // Example code links are relative to this dir.
-                        // eg examples/path/to/file.js
-                        directory: `${__dirname}/content/.examples/`,
-                    },
-                },
                 `gatsby-remark-autolink-headers`,
                 `gatsby-remark-code-titles`,
                 `gatsby-remark-prismjs`,
@@ -68,10 +54,9 @@ const plugins = [
     },
     `gatsby-transformer-yaml`,
     {
-        resolve: `gatsby-source-ghost`,
+        resolve: `gatsby-source-filesystem`,
         options: {
-            apiUrl: `${process.env.GHOST_API_URL}`,
-            contentApiKey: `${process.env.GHOST_API_KEY}`,
+            path: `./src/data/`,
         },
     },
     `gatsby-plugin-catch-links`,
@@ -96,27 +81,6 @@ const plugins = [
         options: {
             query: `
                 {
-                allGhostPost {
-                    edges {
-                        node {
-                            id
-                            slug
-                            published_at
-                            updated_at
-                            created_at
-                            feature_image
-                        }
-                    }
-                },
-                allGhostTag {
-                    edges {
-                        node {
-                            id
-                            slug
-                            feature_image
-                        }
-                    }
-                },
                 allMarkdownRemark{
                     edges {
                         node {
@@ -133,12 +97,6 @@ const plugins = [
                 }
             }`,
             mapping: {
-                allGhostPost: {
-                    sitemap: `pages`,
-                },
-                allGhostTag: {
-                    sitemap: `tags`,
-                },
                 allMarkdownRemark: {
                     sitemap: `pages`,
                 },
@@ -210,7 +168,7 @@ if (SERVICE_WORKER_KILL_SWITCH) {
 module.exports = {
     siteMetadata: {
         title: `Ghost Docs`,
-        siteUrl: process.env.SITE_URL || `https://docs.ghost.org`,
+        siteUrl: process.env.SITE_URL || `https://docs.qazana.net`,
         description: `Everything you need to know about working with the Ghost professional publishing platform.`,
     },
     plugins: plugins,

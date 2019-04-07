@@ -15,7 +15,7 @@ Ghost is stewarded by an independent non-profit organisation called the Ghost Fo
 
 ## Core team
 
-In addition to [full time product team](https://ghost.org/about/) working for Ghost Foundation, there are a number of community members who have contributed to the project for a lengthy period of time and are considered part of the core team. They are:
+In addition to [full time product team](https://qazana.net/about/) working for Ghost Foundation, there are a number of community members who have contributed to the project for a lengthy period of time and are considered part of the core team. They are:
 
 - [Austin Burdine](https://github.com/acburdine) - Ghost-CLI
 - [Felix Rieseberg](https://github.com/felixrieseberg) - Ghost Desktop
@@ -34,11 +34,11 @@ Core Team members are granted commit rights to Ghost projects, access to the Gho
 
 ## Community guidelines
 
-All participation in the Ghost community is subject to our incredibly straightforward [code of conduct](https://ghost.org/conduct) and wider [community guidelines](https://forum.ghost.org/t/faq-guidelines/5).
+All participation in the Ghost community is subject to our incredibly straightforward [code of conduct](https://qazana.net/conduct) and wider [community guidelines](https://forum.qazana.net/t/faq-guidelines/5).
 
 The vast majority of the Ghost community is incredible, and we work hard to make sure it stays that way. We always welcome people who are friendly and participate constructively, but we outright ban anyone who is behaving in a poisonous manner.
 
 
 ## Ghost Trademark
 
-**Ghost** is a registered trademark of Ghost Foundation Ltd. We're happy to extend a flexible usage license of the Ghost trademark to community projects, companies and individuals, however it please read the **[Ghost trademark usage policy](https://ghost.org/trademark/)** before using the Ghost name in your project.
+**Ghost** is a registered trademark of Ghost Foundation Ltd. We're happy to extend a flexible usage license of the Ghost trademark to community projects, companies and individuals, however it please read the **[Ghost trademark usage policy](https://qazana.net/trademark/)** before using the Ghost name in your project.
