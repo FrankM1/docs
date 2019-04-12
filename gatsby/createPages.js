@@ -1,7 +1,7 @@
 const path = require(`path`)
 const _ = require(`lodash`)
 const { allMarkdownPosts } = require(`../utils/node-queries`)
-const { wordpressQueryConfig } = require(`../utils/query-config`)
+const getRelatedPosts = require(`../utils/getRelatedPosts`)
 
 module.exports.createRedirects = ({ actions }) => {
     const { createRedirect } = actions
@@ -20,79 +20,96 @@ module.exports.createWordPressPages = async ({ graphql, actions }) => {
     const { createPage } = actions
     const queryPromises = []
 
-    // Query for each of the tags that we defined above
-    wordpressQueryConfig.forEach(({ tag, section, template, tagsTemplate }) => {
-        queryPromises.push(new Promise((resolve, reject) => {
-            graphql(allWordpressPosts(tag))
-                .then((result) => {
-                    if (result.errors) {
-                        return reject(result.errors)
+    queryPromises.push(new Promise((resolve, reject) => {
+        graphql(
+            `
+              {
+                allWordpressWpFaq {
+                    edges {
+                      node {
+                        id
+                        title
+                        slug
+                        content
+                        excerpt
+                      }
                     }
+                }
+              }
+            `)
+            .then((result) => {
+                if (result.errors) {
+                    return reject(result.errors)
+                }
 
-                    const items = result.data.allWordpressPost.edges
+                const items = result.data.allWordpressWpFaq.edges
 
-                    // Create a tags archive page per primary internal tag as defined per wordpressPostToQuery
-                    // The URL of each tags archive page will contain the current internal tag slug and
-                    // the tag slug, e. g. `/faq/errors/` or `/tutorials/themes/`
-                    if (tagsTemplate) {
-                        let tagArchives = []
+                _.forEach(items, ({ node }) => {
+                    // Update the existing URL field to reflect the URL in Gatsby and
+                    // not in Wordpress. Also needed to link to related posts.
+                    node.url = `/faq/${node.slug}/`
 
-                        _.forEach(items, ({ node }) => {
-                            // Remove all internal tags
-                            const filteredTags = node.tags.filter(tag => !tag.slug.match(/^hash-/))
-
-                            _.forEach(filteredTags, tag => tagArchives.push(tag))
-                        })
-
-                        // Remove invalid values and duplicates
-                        tagArchives = _.uniqBy(_.compact(tagArchives), `slug`)
-
-                        _.forEach(tagArchives, (tag) => {
-                            tag.url = urlUtils.urlForWordpressTag(tag, section)
-
-                            createPage({
-                                path: tag.url,
-                                component: path.resolve(tagsTemplate),
-                                context: {
-                                    // Data passed to context is available
-                                    // in page queries as GraphQL variables.
-                                    // TODO: this could be refactored to be an object
-                                    // not sure if it interfers with search
-                                    tagSlug: tag.slug,
-                                    tagName: tag.name,
-                                    tagURL: tag.url,
-                                    tagDescription: tag.description,
-                                    tagImage: tag.feature_image,
-                                    tagMetaTitle: tag.meta_title,
-                                    tagMetaDescription: tag.meta_description,
-                                    section: section,
-                                },
-                            })
-                        })
-                    }
-
-                    _.forEach(items, ({ node }) => {
-                        // Update the existing URL field to reflect the URL in Gatsby and
-                        // not in Wordpress. Also needed to link to related posts.
-                        node.url = urlUtils.urlForWordpressPost(node, section)
-
-                        createPage({
-                            path: node.url,
-                            component: path.resolve(template),
-                            context: {
-                                // Data passed to context is available
-                                // in page queries as GraphQL variables.
-                                slug: node.slug,
-                                relatedPosts: getRelatedPosts(node, result.data.allWordpressPost.edges),
-                                section,
-                            },
-                        })
+                    createPage({
+                        path: node.url,
+                        component: path.resolve(`./src/templates/wordpress/faq.js`),
+                        context: {
+                            // Data passed to context is available
+                            // in page queries as GraphQL variables.
+                            slug: node.slug,
+                            relatedPosts: getRelatedPosts(node, result.data.allWordpressWpFaq.edges),
+                        }
                     })
-
-                    return resolve()
                 })
-        }))
-    })
+
+                return resolve()
+            })
+    }))
+
+    queryPromises.push(new Promise((resolve, reject) => {
+        graphql(
+            `
+              {
+                allWordpressWpTutorials {
+                    edges {
+                      node {
+                        id
+                        title
+                        slug
+                        content
+                        excerpt
+                      }
+                    }
+                }
+              }
+            `)
+            .then((result) => {
+                if (result.errors) {
+                    return reject(result.errors)
+                }
+
+                const items = result.data.allWordpressWpTutorials.edges
+
+                _.forEach(items, ({ node }) => {
+                    // Update the existing URL field to reflect the URL in Gatsby and
+                    // not in Wordpress. Also needed to link to related posts.
+                    node.url = `/tutorials/${node.slug}/`
+
+                    createPage({
+                        path: node.url,
+                        component: path.resolve(`./src/templates/wordpress/tutorial.js`),
+                        context: {
+                            // Data passed to context is available
+                            // in page queries as GraphQL variables.
+                            slug: node.slug,
+                            relatedPosts: getRelatedPosts(node, result.data.allWordpressWpTutorials.edges),
+                        }
+                    })
+                })
+
+                return resolve()
+            })
+    }))
+
 
     return Promise.all(queryPromises)
 }

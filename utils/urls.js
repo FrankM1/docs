@@ -13,8 +13,4 @@ module.exports.urlForMarkdown = (node, fallback) => {
     return slug
 }
 
-// Create a Gatsby-style URL for resources in Qazana. These are currently the same but they might not always be
-module.exports.urlForGhostPost = (postNode, section) => `/${section}/${postNode.slug}/`
-module.exports.urlForGhostTag = (tagNode, section) => `/${section}/${tagNode.slug}/`
-
 // Adding a temp change to test things

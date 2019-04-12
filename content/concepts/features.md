@@ -85,4 +85,4 @@ Qazana automatically generates the correct `rel="canonical"` tag for each post a
 
 ---
 
-If you're curious to see more, check out the [features page](https://qazana.net/features/) on Qazana.org.
+If you're curious to see more, check out the [features page](https://qazana.net/features/) on Qazana.net.
