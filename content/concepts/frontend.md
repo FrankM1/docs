@@ -1,16 +1,16 @@
 ---
-title: "Front-end"
+title: "Qazana Frontend"
 meta_title: "Qazana front-end - Core Concepts"
 meta_description: "Qazana is a full headless CMS which is completely agnostic of any particular front-end or static site framework. Find out more..."
 keywords:
     - concepts
-    - ghost
+    - qazana
     - publishing
     - front-end
 sidebar: "concepts"
 ---
 
-Qazana is a full headless CMS which is completely agnostic of any particular front end or static site framework.
+Qazana is a web page builder which means the final result needs to be displayed to the user on the frontend.
 
 Just like Qazana's admin client, its front-end is both optional and interchangeable. While Qazana's early architecture represented more of a standard monolithic web-app, it's now compatible with just about any front-end you can throw at it.
 

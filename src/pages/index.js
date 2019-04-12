@@ -40,24 +40,24 @@ const HomePage = ({ data, location }) => {
                             <Box className="mt5 tdn flex-auto flex flex-column items-stretch" elevation="1">
                                 <HomeAPIBox
                                     to="/api/#frontend-sdk"
-                                    title="Frontend SDKs"
+                                    title="Elements"
                                     icon="sdks"
                                 >
-                                    Frameworks for working with the Qazana API to build a publication website
+                                    Getting started with Qazana on your website
                                 </HomeAPIBox>
                                 <HomeAPIBox
                                     to="/api/#rest-api"
-                                    title="Rest API"
+                                    title="Templates"
                                     icon="rest-api"
                                 >
-                                    A full reference of API Endpoints
+                                    A detailed overview of the how Qazana works
                                 </HomeAPIBox>
                                 <HomeAPIBox
                                     to="/api/#tools"
                                     title="Tools"
                                     icon="tools"
                                 >
-                                    Utilities to help build and manage Qazana
+                                    Utilities to help use and manage Qazana
                                 </HomeAPIBox>
                             </Box>
                         </section>

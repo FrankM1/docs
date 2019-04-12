@@ -2,63 +2,61 @@ import React from 'react'
 import Helmet from "react-helmet"
 import PropTypes from 'prop-types'
 import _ from 'lodash'
-import { tags as tagsHelper } from '@tryghost/helpers'
 
 import getAuthorProperties from './getAuthorProperties'
 import ImageMeta from './ImageMeta'
 
 const ArticleMetaGhost = ({ data, canonical, fetchAuthorData, title, overwriteDefaultImage, image }) => {
-    const { ghostPost } = data
+    const { wordpressPost } = data
     const { siteMetadata } = data.site
 
-    const author = getAuthorProperties(ghostPost.primary_author, fetchAuthorData)
-    const publicTags = _.map(tagsHelper(ghostPost, { visibility: `public`, fn: tag => tag }), `name`)
-    const primaryTag = publicTags[0] || { name: `General`, slug: `general` }
-    const seoImage = (overwriteDefaultImage && ghostPost.feature_image) ? ghostPost.feature_image : image
+    const author = getAuthorProperties(wordpressPost.primary_author, fetchAuthorData)
+    const primaryTag = { name: `General`, slug: `general` }
+    const seoImage = (overwriteDefaultImage && wordpressPost.feature_image) ? wordpressPost.feature_image : image
 
     return (
         <>
             <Helmet>
-                <title>{ghostPost.meta_title || title || ghostPost.title}</title>
-                <meta name="description" content={ghostPost.meta_description || ghostPost.excerpt} />
+                <title>{wordpressPost.meta_title || title || wordpressPost.title}</title>
+                <meta name="description" content={wordpressPost.meta_description || wordpressPost.excerpt} />
                 <link rel="canonical" href={canonical} />
 
                 <meta property="og:site_name" content={siteMetadata.title} />
                 <meta name="og:type" content="article" />
                 <meta name="og:title"
                     content={
-                        ghostPost.og_title ||
+                        wordpressPost.og_title ||
                         title ||
-                        ghostPost.meta_title ||
-                        ghostPost.title
+                        wordpressPost.meta_title ||
+                        wordpressPost.title
                     }
                 />
                 <meta name="og:description"
                     content={
-                        ghostPost.og_description ||
-                        ghostPost.excerpt ||
-                        ghostPost.meta_description
+                        wordpressPost.og_description ||
+                        wordpressPost.excerpt ||
+                        wordpressPost.meta_description
                     }
                 />
                 <meta property="og:url" content={canonical} />
-                <meta property="article:published_time" content={ghostPost.published_at} />
-                <meta property="article:modified_time" content={ghostPost.updated_at} />
+                <meta property="article:published_time" content={wordpressPost.date} />
+                <meta property="article:modified_time" content={wordpressPost.modified} />
                 {publicTags.map((keyword, i) => (<meta property="article:tag" content={keyword} key={i} />))}
                 <meta property="article:author" content="https://www.facebook.com/ghost/" />
 
                 <meta name="twitter:title"
                     content={
-                        ghostPost.twitter_title ||
+                        wordpressPost.twitter_title ||
                         title ||
-                        ghostPost.meta_title ||
-                        ghostPost.title
+                        wordpressPost.meta_title ||
+                        wordpressPost.title
                     }
                 />
                 <meta name="twitter:description"
                     content={
-                        ghostPost.twitter_description ||
-                        ghostPost.excerpt ||
-                        ghostPost.meta_description
+                        wordpressPost.twitter_description ||
+                        wordpressPost.excerpt ||
+                        wordpressPost.meta_description
                     }
                 />
                 <meta name="twitter:url" content={canonical} />
@@ -81,17 +79,17 @@ const ArticleMetaGhost = ({ data, canonical, fetchAuthorData, title, overwriteDe
                             ${author.sameAsArray ? `"sameAs": ${author.sameAsArray}` : ``}
                         },
                         ${publicTags.length ? `"keywords": "${_.join(publicTags, `, `)}",` : ``}
-                        "headline": "${ghostPost.meta_title || title || ghostPost.title}",
+                        "headline": "${wordpressPost.meta_title || title || wordpressPost.title}",
                         "url": "${canonical}",
-                        "datePublished": "${ghostPost.published_at}",
-                        "dateModified": "${ghostPost.updated_at}",
+                        "datePublished": "${wordpressPost.date}",
+                        "dateModified": "${wordpressPost.modified}",
                         "image": {
                             "@type": "ImageObject",
                             "url": "${seoImage}",
                             "width": 1000,
                             "height": 563
                         },
-                        "description": "${ghostPost.meta_description || ghostPost.excerpt}",
+                        "description": "${wordpressPost.meta_description || wordpressPost.excerpt}",
                         "mainEntityOfPage": {
                             "@type": "WebPage",
                             "@id": "${siteMetadata.siteUrl}"
@@ -121,10 +119,10 @@ ArticleMetaGhost.defaultProps = {
 
 ArticleMetaGhost.propTypes = {
     data: PropTypes.shape({
-        ghostPost: PropTypes.shape({
+        wordpressPost: PropTypes.shape({
             title: PropTypes.string.isRequired,
-            published_at: PropTypes.string.isRequired,
-            updated_at: PropTypes.string.isRequired,
+            date: PropTypes.string.isRequired,
+            modified: PropTypes.string.isRequired,
             excerpt: PropTypes.string.isRequired,
             meta_title: PropTypes.string,
             meta_description: PropTypes.string,

@@ -5,8 +5,8 @@
         link: /concepts/introduction/
       - title: Features
         link: /concepts/features/
-      - title: Ecosystem overview
-        link: /concepts/ecosystem/
+      - title: Requirements
+        link: /concepts/server-requirements/
   - group: Architecture
     items:
       - title: Overview
@@ -15,26 +15,20 @@
         link: /concepts/core/
       - title: Admin client
         link: /concepts/admin/
-      - title: Front-end
-        link: /concepts/front-end/
-  - group: Data Model
-    items:
-      - title: Posts
-        link: /concepts/posts/
-      - title: Pages
-        link: /concepts/pages/
-      - title: Tags
-        link: /concepts/tags/
-      - title: Users
-        link: /concepts/users/
-  - group: Hosting
-    items:
-      - title: Hosting overview
-        link: /concepts/hosting/
-      - title: Recommendations
-        link: /concepts/server-recommendations/
-      - title: Troubleshooting
-        link: /concepts/hosting-problems/
+      - title: Editor
+        link: /concepts/editor/
+      - title: Frontend
+        link: /concepts/frontend/
+      - title: Document
+        link: /concepts/document/
+      - title: Extension
+        link: /concepts/extension/
+      - title: Element
+        link: /concepts/element/
+      - title: Skin
+        link: /concepts/skin/
+      - title: Template
+        link: /concepts/template/
   - group: Configuration
     items:
       - title: Config options
@@ -51,9 +45,5 @@
         link: /concepts/vulnerabilities/
   - group: Roadmap
     items:
-      - title: Governance
-        link: /concepts/governance/
-      - title: Development principles
-        link: /concepts/principles/
       - title: Contributing
         link: /concepts/contributing/

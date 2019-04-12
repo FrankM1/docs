@@ -19,7 +19,7 @@ const TutorialCard = ({ post, className, section }) => {
                 <header>
                     <h2 className={`${Spirit.h3} darkgrey nt2`}>{post.title}</h2>
                 </header>
-                <section className={`${Spirit.p} midgrey mt4`}>{excerpt}</section>
+                <section className={`${Spirit.p} midgrey mt4`}>{excerpt.replace(/<.+?>/g, '')}</section>
             </div>
             <footer className="pt2 mt6 flex justify-between items-center">
                 <div className="flex items-center">

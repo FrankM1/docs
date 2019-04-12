@@ -1,10 +1,11 @@
 ---
-title: "Qazana Admin"
-meta_title: "Qazana Admin - Core Concepts"
+title: "Qazana Editor"
+meta_title: "Qazana Editor - Core Concepts"
 meta_description: "Qazana is installed with a streamlined clientside admin interface for editors who need a powerful tool to manage their content."
 keywords:
     - concepts
     - qazana
+    - editor
     - publishing
     - architecture
 sidebar: "concepts"

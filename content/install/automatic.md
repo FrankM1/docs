@@ -1,5 +1,5 @@
 ---
-title: "Install from Source"
+title: "Install from the WordPress plugin repository"
 keywords:
     - Developer install
     - Contribution
@@ -29,7 +29,7 @@ yarn global add knex-migrator grunt-cli ember-cli bower
 
 ## Create GitHub forks
 
-First you'll need to make forks of both the [Qazana](https://github.com/tryghost/ghost) and [Qazana-Admin](https://github.com/tryghost/ghost-admin) respositories. Click on the fork button right at the top, wait for a copy to be created over on your personal GitHub account, and you should be all set!
+First you'll need to make forks of both the [Qazana](https://github.com/tryghost/qazana) and [Qazana-Admin](https://github.com/tryghost/ghost-admin) respositories. Click on the fork button right at the top, wait for a copy to be created over on your personal GitHub account, and you should be all set!
 
 
 ![Fork](/images/setup/fork.gif)

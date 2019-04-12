@@ -4,7 +4,7 @@ meta_title: "Contributing to Qazana - Core Concepts"
 meta_description: "Find out how to contribute to the completely open source Qazana software!"
 keywords:
     - concepts
-    - ghost
+    - qazana
     - publishing
     - contributing
 sidebar: "concepts"
@@ -48,9 +48,9 @@ As a non-profit organisation we're always grateful to receive any and all donati
 We're very [happy to partner](https://qazana.net/partners/) with startups and companies who are able to provide Qazana with credit, goods and services which help us build free, open software for everyone. Please reach out to us `hello@qazana.net` if you're interested in partnering with us to help Qazana.
 
 
-<h4>Open Collective <a style="display:inline-block;" href="https://opencollective.com/ghost"><img style="margin:0 0 -3px 5px;" src="https://opencollective.com/ghost/backers/badge.svg" alt="OpenCollective" /></a></h4>
+<h4>Open Collective <a style="display:inline-block;" href="https://opencollective.com/qazana"><img style="margin:0 0 -3px 5px;" src="https://opencollective.com/qazana/backers/badge.svg" alt="OpenCollective" /></a></h4>
 
-**New:** We have a number of ongoing donation and sponsorship opportunities for individuals or companies looking to make ongoing contributions to the open source software which they use on [Open Collective](https://opencollective.com/ghost).
+**New:** We have a number of ongoing donation and sponsorship opportunities for individuals or companies looking to make ongoing contributions to the open source software which they use on [Open Collective](https://opencollective.com/qazana).
 
 
 #### Bitcoin

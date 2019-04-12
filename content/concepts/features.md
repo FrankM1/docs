@@ -4,7 +4,7 @@ meta_title: "Qazana Features - Core Concepts"
 meta_description: "Qazana comes with powerful features built directly into the core software which are customisable and extensible to suit your needs."
 keywords:
     - concepts
-    - ghost
+    - qazana
     - publishing
     - features
 sidebar: "concepts"
@@ -49,7 +49,7 @@ Set up your site with sensible user roles and permissions built-in from the star
 
 ## Custom themes
 
-Qazana ships with a simple Handlebars.js front-end theme layer which is very straightforward to work with and surprisingly powerful. Many people stick with the default theme ([live demo](https://demo.ghost.io) / [source code](https://github.com/tryghost/casper)), which provides a clean magazine design - but this can be modified or entirely replaced.
+Qazana ships with a simple Handlebars.js front-end theme layer which is very straightforward to work with and surprisingly powerful. Many people stick with the default theme ([live demo](https://demo.qazana.io) / [source code](https://github.com/tryghost/casper)), which provides a clean magazine design - but this can be modified or entirely replaced.
 
 The Qazana [Theme Marketplace](https://marketplace.qazana.net) provides a selection of pre-made third-party themes which can be installed with ease. Of course you can also build your own [Handlebars Theme](/api/handlebars-themes/) or use a [different front-end](/api/) altogether.
 

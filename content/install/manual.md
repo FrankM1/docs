@@ -1,11 +1,11 @@
 ---
-title: "How to install Qazana locally"
+title: "How to install Qazana manually"
 date: "2018-10-01"
-meta_title: "How to install Qazana locally on Mac, PC or Linux"
-meta_description: "A detailed local install guide for how to install the Qazana publishing platform on your computer running Mac, PC or Linux. Ideal for Qazana theme development."
+meta_title: "How to install Qazana manually"
+meta_description: "A detailed local install guide for how to install the Qazana publishing platform on your website manually. Ideal for Qazana theme development."
 keywords:
     - setup
-    - local
+    - manual
     - install
     - development
 ---
@@ -40,10 +40,10 @@ To install Qazana locally you will need the following:
 [Qazana-CLI](/api/ghost-cli/) is a commandline tool to help you get Qazana installed and configured for use, quickly and easily. The npm module can be installed with `npm` or `yarn` on a local machine, depending on your preference.
 
 ```bash
-npm install ghost-cli@latest -g
+npm install qazana-cli@latest -g
 ```
 
-Once installed, you can always run `ghost help` to see a list of available commands.
+Once installed, you can always run `qazana help` to see a list of available commands.
 
 ---
 
@@ -52,10 +52,10 @@ Once installed, you can always run `ghost help` to see a list of available comma
 In your terminal, `cd` into an empty directory and run the install command:
 
 ```bash
-ghost install local
+qazana install local
 ```
 
-Once the install is finished you'll be able to access your new site on `http://localhost:2368` and `http://localhost:2368/ghost` to access Qazana Admin ✨
+Once the install is finished you'll be able to access your new site on `http://localhost:2368` and `http://localhost:2368/qazana` to access Qazana Admin ✨
 
 <mark><strong>That's it! You're done.</strong></mark>
 
@@ -70,10 +70,10 @@ Once the install is finished you'll be able to access your new site on `http://l
 
 Qazana runs in a separate background process and remains running until you stop it or restart your computer. So you may find these commands useful for taming it:
 
-* `ghost stop` to stop Qazana
-* `ghost start` to start Qazana
-* `ghost log` views logs
-* `ghost ls` to list all running Qazana blogs
+* `qazana stop` to stop Qazana
+* `qazana start` to start Qazana
+* `qazana log` views logs
+* `qazana ls` to list all running Qazana blogs
 
 #### Troubleshooting
 For troubleshooting and errors, try searching this documentation and [FAQ section](/faq/) to find information about common error messages.
@@ -99,7 +99,7 @@ GScan is a tool that validates Qazana themes for compatibility with the latest v
 npm install gscan -g
 
 # Scan a theme directory for compatibility
-gscan /path/to/ghost/content/themes/casper
+gscan /path/to/qazana/content/themes/casper
 
 # Scan a theme zip file for compatibility
 gscan -z /path/to/downloads/theme.zip

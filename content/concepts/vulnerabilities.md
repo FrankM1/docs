@@ -4,7 +4,7 @@ meta_title: "Reporting Security Vulnerabilities in Qazana Core"
 meta_description: "Find out how to take part in responsible disclosure to the Qazana security team."
 keywords:
     - concepts
-    - ghost
+    - qazana
     - publishing
     - vulnerabilities
 sidebar: "concepts"
@@ -56,7 +56,7 @@ A basic feature of Qazana as a CMS is to allow content creators to make use of s
 
 Qazana's admin application does a lot to ensure that unknown scripts are not run within the the admin application itself, however that only protects one side of a Qazana site. If the front-end (the rendered site that anonymous visitors see) shares the same domain as the admin application then browsers do not offer sufficient protections to prevent successful XSS attacks by trusted users.
 
-If you are concerned that trusted users you invite to create your site will act maliciously the best advice is to split your front-end and admin area onto different domains (e.g. `https://mysite.com` and `https://mysiteadmin.com/ghost/`). This way browsers offer greater built-in protection because credentials cannot be read across domains. Even in this case it should be understood that you are giving invited users completely free reign in content creation so absolute security guarantees do not exist.
+If you are concerned that trusted users you invite to create your site will act maliciously the best advice is to split your front-end and admin area onto different domains (e.g. `https://mysite.com` and `https://mysiteadmin.com/qazana/`). This way browsers offer greater built-in protection because credentials cannot be read across domains. Even in this case it should be understood that you are giving invited users completely free reign in content creation so absolute security guarantees do not exist.
 
 We take any attack vector where an untrusted user is able to inject malicious content very seriously and welcome any and all reports.
 

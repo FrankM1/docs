@@ -2,13 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
-import { Spirit } from '../styles/spirit-styles'
-import { Layout } from '../components/common/layout'
-import { SetupBox } from '../components/setup'
-import { MetaData, getMetaImageUrls } from '../components/common/meta'
+import { Spirit } from './styles/spirit-styles'
+import { Layout } from './components/common/layout'
+import { SetupBox } from './components/setup'
+import { MetaData, getMetaImageUrls } from './components/common/meta'
 
 const SetupPage = ({ data, location }) => {
     // Add meta title and description for this page here to overwrite the site meta data as set in the config
+    const pageTitle = `Integration`
     const title = `How To Install Qazana: Setup & Configuration - Open Source Publishing`
     const description = `All the tools you need to get started with Qazana 👉Self-hosted install & setup, local install guide for development, contribution guidelines & premium hosted services!`
     const imageUrl = getMetaImageUrls()
@@ -26,7 +27,7 @@ const SetupPage = ({ data, location }) => {
             <Layout mainClass="bg-whitegrey-l2 pb-vw3" bodyClass="bg-white">
                 <section className="bg-setup">
                     <div className={`${Spirit.page.xl} tc-ns pt-vw6 pt-vw5-ns pb-vw5 white`}>
-                        <h1 className={`${Spirit.sectionHeading} gh-integration-header-shadow`}>Setup Guide</h1>
+                        <h1 className={`${Spirit.sectionHeading} gh-integration-header-shadow`}>{pageTitle}</h1>
                         <p className={Spirit.sectionSubHeading}>
                             The easiest way to get started is to use <strong>Qazana(Pro)</strong>. If you prefer to self-host, we strongly recommend an Ubuntu server with at least 1GB of memory to run Qazana.
                         </p>

@@ -4,7 +4,7 @@ meta_title: "Qazana Core API - Concepts"
 meta_description: "At it's heart Qazana is a RESTful JSON API. Find out how to work with the Qazana API to retrieve publication content with ease."
 keywords:
     - concepts
-    - ghost
+    - qazana
     - publishing
     - API
 sidebar: "concepts"

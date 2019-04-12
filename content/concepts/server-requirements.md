@@ -1,10 +1,10 @@
 ---
-title: "Server Recommendations"
-meta_title: "Server Recommendations for Qazana - Core Concepts"
+title: "Server Requirements"
+meta_title: "Server Requirements for Qazana - Core Concepts"
 meta_description: "The recommended options for self-hosting a Qazana publication on your server for the highest security and performance."
 keywords:
     - concepts
-    - ghost
+    - qazana
     - publishing
     - server
 sidebar: "concepts"

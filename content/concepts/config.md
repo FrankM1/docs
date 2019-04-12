@@ -5,7 +5,7 @@ meta_description: "Find out how to configure your site and override Qazana's def
 keywords:
     - config
     - concepts
-    - ghost
+    - qazana
     - publishing
 sidebar: "concepts"
 ---
@@ -15,7 +15,7 @@ For self-hosted Qazana users, a custom configuration file can be used to overrid
 
 ## Overview
 
-When you install Qazana using the supported and recommended method using `ghost-cli`, a custom configuration file is created for you by default. There are some configuration options which are required by default, and many optional configurations.
+When you install Qazana using the supported and recommended method using `qazana-cli`, a custom configuration file is created for you by default. There are some configuration options which are required by default, and many optional configurations.
 
 The three required options are `url` and `database` which are configured during setup, and `mail` which needs to be configured once you've installed Qazana.
 
@@ -24,7 +24,7 @@ This article explains how to setup your mail config, as well as walk you through
 
 ## Custom configuration files
 
-The configuration is managed by [nconf](https://github.com/indexzero/nconf/). A custom configuration file must be a valid JSON file located in the root folder and changes to the file can be implemented using `ghost restart`.
+The configuration is managed by [nconf](https://github.com/indexzero/nconf/). A custom configuration file must be a valid JSON file located in the root folder and changes to the file can be implemented using `qazana restart`.
 
 Since Node.js has the concept of environments built in, Qazana supports two environments: **development** and **production**. All public Qazana publications run in production mode, while development mode can be used to test or build on top of Qazana locally.
 
@@ -47,14 +47,14 @@ NODE_ENV=production node index.js
 Start Qazana with:
 
 ```bash
-DEBUG=ghost:*,ghost-config node index.js
+DEBUG=qazana:*,qazana-config node index.js
 ```
 
 #### Running Qazana with config env variables
 Start Qazana using environment variables which match the name and case of each config option:
 
 ```bash
-url=http://ghost.local:2368 node index.js
+url=http://qazana.local:2368 node index.js
 ```
 
 For nested config options, separate with two underscores:
@@ -91,14 +91,14 @@ There are a number of configuration options which are explained in detail in thi
 
 *(Required in production)*
 
-Once a Qazana publication is installed, the first thing to do is set a url. When installing using `ghost-cli` the install process request the URL during the setup process.
+Once a Qazana publication is installed, the first thing to do is set a url. When installing using `qazana-cli` the install process request the URL during the setup process.
 
 Enter the URL that is used to access your publication. If using a subpath, enter the full path, `https://example.com/blog/`. If using SSL, always enter the URL with `https://`.
 
 #### SSL
-We always recommend using SSL to run your Qazana publication in production. Qazana has a number of configuration options for working with SSL, and securing the URLs for the admin `/ghost/` and the frontend of your publication. Without SSL your username and password are sent in plaintext.
+We always recommend using SSL to run your Qazana publication in production. Qazana has a number of configuration options for working with SSL, and securing the URLs for the admin `/qazana/` and the frontend of your publication. Without SSL your username and password are sent in plaintext.
 
-`ghost-cli` prompts to setup SSL during the installation process. After a successful ssl setup, you can find your ssl certificate in `/etc/letsencrypt`.
+`qazana-cli` prompts to setup SSL during the installation process. After a successful ssl setup, you can find your ssl certificate in `/etc/letsencrypt`.
 
 If you see errors such as `access denied from url`, then the provided URL in your config file is incorrect and needs to be updated.
 
@@ -262,7 +262,7 @@ Open your production config file in any code editor and paste the username and p
 }
 ```
 
-Once you are finished, hit save and then run `ghost restart` for your changes to take effect. It is possible to reuse your settings for a development environment if you have both, by making the same changes to `config.development.json`.
+Once you are finished, hit save and then run `qazana restart` for your changes to take effect. It is possible to reuse your settings for a development environment if you have both, by making the same changes to `config.development.json`.
 
 #### Secure connection
 
@@ -304,7 +304,7 @@ It's also possible to use [Amazon Simple Email Service](https://aws.amazon.com/s
 
 #### From address
 
-By default the 'from' address for mail sent from Qazana is set to the title of your publication, for example `<ghost@your-publication.com>`. To override this to something different, use:
+By default the 'from' address for mail sent from Qazana is set to the title of your publication, for example `<qazana@your-publication.com>`. To override this to something different, use:
 
 ```json
 "mail": {
@@ -323,7 +323,7 @@ A custom name can also be provided:
 
 ### Admin URL
 
-Admin can be used to specify a different protocol for your admin panel or a different hostname (domain name). It can't affect the path at which the admin panel is served (this is always /ghost/).
+Admin can be used to specify a different protocol for your admin panel or a different hostname (domain name). It can't affect the path at which the admin panel is served (this is always /qazana/).
 
 ```json
 "admin": {

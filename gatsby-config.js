@@ -139,6 +139,24 @@ const plugins = [
             },
         },
     },
+    {
+        resolve: "gatsby-source-wordpress",
+        options: {
+          baseUrl: "wordpress-backend.test",
+          protocol: "http",
+          hostingWPCOM: false,
+          verboseOutput: true,
+          includedRoutes: [
+            "**/categories",
+            "**/posts",
+            "**/pages",
+            "**/media",
+            "**/menus",
+            "**/faq",
+            "**/tutorials",
+          ],
+        },
+      }
 ]
 
 const runAlgoliaBuild = () => (process.env.INCOMING_HOOK_TITLE && process.env.INCOMING_HOOK_TITLE === `Algolia`) || process.env.ALGOLIA

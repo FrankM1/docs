@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import _ from 'lodash'
-import { tags as tagsHelper } from '@tryghost/helpers'
+//import { tags as tagsHelper } from '@tryghost/helpers'
 
 /* getTagsforPostCollection
 * Takes a Qazana post object and a link prefix and returns the used tags
@@ -13,10 +13,10 @@ export const getTagsforPostCollection = function getTagsforPostCollection(posts,
     // remove any added `/`, as we add them later again
     linkPrefix = /^(?:\/?)([a-zA-Z\d-]*)(?:\/?)/i.exec(linkPrefix)[1]
 
-    _.forEach(posts, ({ node }) => {
-        const publicTags = tagsHelper(node, { visibility: `public`, fn: tag => tag })
-        tags.push(publicTags)
-    })
+    // _.forEach(posts, ({ node }) => {
+    //     const publicTags = tagsHelper(node, { visibility: `public`, fn: tag => tag })
+    //     tags.push(publicTags)
+    // })
 
     tags = _.flattenDeep(tags)
 

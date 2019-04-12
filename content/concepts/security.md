@@ -4,7 +4,7 @@ meta_title: "Qazana Security - Core Concepts"
 meta_description: "Qazana is committed to developing secure, reliable products utilising all modern security best practices. Find out more!"
 keywords:
     - concepts
-    - ghost
+    - qazana
     - publishing
     - security
 sidebar: "concepts"
@@ -14,7 +14,7 @@ Qazana is committed to developing secure, reliable products utilising all modern
 
 The Qazana security team is made up of full time staff employed by the Qazana Foundation as well as volunteer open source contributors and security experts. We do both consultation and penetration testing of our software and  infrastructure with external security researchers and agencies.
 
-We take security very seriously at Qazana and welcome any peer review of our completely [open source codebase](https://github.com/tryghost/ghost) to help ensure that it remains completely secure.
+We take security very seriously at Qazana and welcome any peer review of our completely [open source codebase](https://github.com/tryghost/qazana) to help ensure that it remains completely secure.
 
 
 ## Security features

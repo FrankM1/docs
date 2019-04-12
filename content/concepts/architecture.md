@@ -4,7 +4,7 @@ meta_title: "Qazana Architecture - Core Concepts"
 meta_description: "Qazana is structured as a modern, decoupled web application. Discover how things fit together at Qazana."
 keywords:
     - concepts
-    - ghost
+    - qazana
     - publishing
     - architecture
 sidebar: "concepts"

@@ -16,13 +16,14 @@ const MetaData = ({
     overwriteDefaultImage,
     location,
 }) => {
-    const { ghostPost, markdownRemark } = data || {}
+
+    const { wordpressPost, markdownRemark } = data || {}
     const { siteMetadata } = data.site
 
     const canonical = url.resolve(siteMetadata.siteUrl, location.pathname, `/`)
 
     if (type === `article`) {
-        if (ghostPost) {
+        if (wordpressPost) {
             return (
                 <ArticleMetaGhost
                     data={data}
@@ -66,7 +67,7 @@ MetaData.propTypes = {
                 description: PropTypes.string.isRequired,
             }).isRequired,
         }).isRequired,
-        ghostPost: PropTypes.object,
+        wordpressPost: PropTypes.object,
         markdownRemark: PropTypes.object,
     }).isRequired,
     location: PropTypes.shape({

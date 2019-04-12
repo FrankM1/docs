@@ -33,9 +33,8 @@ const Footer = () => (
                 <ul className="flex list pa0 ma0 items-center">
                     <li className={listItemClass}><a href="https://qazana.net" className="dib pt2 mr6"><Logo /></a></li>
                     <li className={`${listItemClass} dn db-l`}><Link to="/" className={linkClass}>Docs Home</Link></li>
-                    <li className={`${listItemClass} dn db-l`}><a href="https://forum.qazana.net" className={linkClass}>Forum</a></li>
-                    <li className={`${listItemClass} dn db-l`}><a href="https://status.qazana.net" className={linkClass}>Status</a></li>
-                    <li className={`${listItemClass} dn db-l`}><a href="https://twitter.com/qazana" className={linkClass}>@Qazana</a></li>
+                    <li className={`${listItemClass} dn db-l`}><a href="https://qazana.net" className={linkClass}>Home</a></li>
+                    <li className={`${listItemClass} dn db-l`}><a href="https://twitter.com/getqazana" target="_blank" className={linkClass}>@GetQazana</a></li>
                 </ul>
 
                 <ul className="flex list pa0 ma0 items-center">

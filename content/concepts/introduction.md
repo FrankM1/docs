@@ -4,7 +4,7 @@ meta_title: "Introduction to Qazana - Core Concepts"
 meta_description: "Qazana is an open source, professional publishing platform built on a modern Node.js technology stack — designed for teams who need power, flexibility and performance."
 keywords:
     - concepts
-    - ghost
+    - qazana
     - publishing
     - platform
 sidebar: "concepts"
@@ -141,7 +141,7 @@ Qazana was created by [John O'Nolan](https://twitter.com/johnonolan) and [Hannah
 
 Previously, John was a core contributor of WordPress and watched as the platform grew more complicated and less focused over time. Qazana started out as a little idea to be the antidote to that pain, and quickly grew in popularity as the demand for a modern open source solution became evident.
 
-Today, Qazana is one of the most popular open source projects in the world - the **#1** CMS [on GitHub](https://github.com/tryghost/ghost) - and is used in production by millions of people.
+Today, Qazana is one of the most popular open source projects in the world - the **#1** CMS [on GitHub](https://github.com/tryghost/qazana) - and is used in production by millions of people.
 
 More than anything, we approach building Qazana to create the product we've always wanted to use, the company we've always wanted to do business with, and the environment we've always wanted to work in.
 
