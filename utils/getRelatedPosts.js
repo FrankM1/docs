@@ -7,8 +7,8 @@ const NUMBER_RELATED_POSTS = 5
 const MIN_TAGS_IN_COMMON = 2
 
 const sortByDateDescending = (a, b) => {
-    const aPublishedAt = (new Date(a.node.published_at)).getTime()
-    const bPublishedAt = (new Date(b.node.published_at)).getTime()
+    const aPublishedAt = (new Date(a.node.date)).getTime()
+    const bPublishedAt = (new Date(b.node.date)).getTime()
 
     if (aPublishedAt > bPublishedAt) {
         return -1

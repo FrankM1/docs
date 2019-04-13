@@ -2,11 +2,15 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from "gatsby"
 
-import { Spirit } from '../../styles/spirit-styles'
-import { Logo } from "."
-import { SearchModal } from './search'
+import { Spirit } from '../../../styles/spirit-styles'
+import { Logo } from ".."
+import { SearchModal } from '../search'
+import getNavFile from './getNavFile'
 
 const NavBar = ({ theme }) => {
+
+    const navigationFile = getNavFile(`header-menu`)
+
     // Theme definitions
     const themeClasses = {
         dark: {
@@ -36,12 +40,16 @@ const NavBar = ({ theme }) => {
             {/* navbar-container wrapper element and bottom padding is needed to hide the horizontal scrollbar on smaller screensizes */}
             <div className="navbar-container">
                 <div className="dn flex-ns flex-auto justify-center items-center overflow-x-auto mr12 mr0-l ml5 ml0-l pb20">
-                    <Link to="/concepts/introduction/" className={`${themeClasses[theme].menuItem} nowrap f8 pa3 mr1 mr3-l nl3`}>Concepts</Link>
-                    <Link to="/setup/" className={`${themeClasses[theme].menuItem} nowrap f8 pa3 mr1 mr3-l`}>Setup</Link>
-                    <Link to="/tutorials/" className={`${themeClasses[theme].menuItem} nowrap f8 pa3 mr1 mr3-l`}>Tutorials</Link>
-                    <Link to="/integrations/" className={`${themeClasses[theme].menuItem} nowrap f8 pa3 mr1 mr3-l`}>Integrations</Link>
-                    <Link to="/api/" className={`${themeClasses[theme].menuItem} nowrap f8 pa3 mr1 mr3-l`}>API Reference</Link>
-                    <Link to="/faq/" className={`${themeClasses[theme].menuItem} nowrap f8 pa3 mr1 mr3-l`}>FAQ</Link>
+                    { navigationFile.groups.map( (group, i) => {
+                        return (
+                            group.items.map( ( item, i ) => (
+                                <Link key={i} to={item.link} className={`${themeClasses[theme].menuItem} nowrap f8 pa3 mr1 mr3-l`}>
+                                    { item.title }
+                                </Link>
+                            ))
+                        )
+                    })
+                }
                 </div>
             </div>
             <div className="relative pl3">

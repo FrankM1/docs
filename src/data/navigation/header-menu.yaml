@@ -1,0 +1,17 @@
+- groups:
+  - group: Main Menu
+    items:
+      - title: Tour
+        link: /tour/
+      - title: Concepts
+        link: /concepts/introduction/
+      - title: Setup
+        link: /setup/
+      - title: Tutorials
+        link: /tutorials/
+      - title: Integrations
+        link: /integrations/
+      - title: API Reference
+        link: /api/
+      - title: FAQ
+        link: /faq/

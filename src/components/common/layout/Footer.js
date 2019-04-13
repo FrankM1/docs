@@ -15,14 +15,14 @@ const Footer = () => (
                 <Icon name="cloud-upload" className="absolute top-0 top-10-ns left-2 left-10-ns w10 w13-ns h-auto fill-green" />
                 <h4 className={`${Spirit.h4} darkgrey`}>Ready to upgrade to the best?</h4>
                 <p className={`${Spirit.small} midgrey mt1`}>
-                    Spend less time running your servers and more time running your site. <strong className="purple">Qazana(Pro)</strong> has got you covered.
+                    Spend less time building your website and more time running your business. <strong className="purple">Qazana(Pro)</strong> has got you covered.
                 </p>
             </a>
 
-            <a href="https://forum.qazana.net/" className="db col-12 col-6-ns pr2 pr20-ns pt18 pt7-ns pb7 pl2 pl30-ns bt b--whitegrey bn-ns relative tdn dark-h4-hover">
+            <a href="https://qazana.net/support" className="db col-12 col-6-ns pr2 pr20-ns pt18 pt7-ns pb7 pl2 pl30-ns bt b--whitegrey bn-ns relative tdn dark-h4-hover">
                 <Icon name="chat-double-bubble" className="absolute top-6 top-10-ns left-2 left-10-ns w10 w13-ns h-auto fill-purple" />
                 <h4 className={`${Spirit.h4} darkgrey`}>Looking for help or advice?</h4>
-                <p className={`${Spirit.small} midgrey mt1`}>Join the <strong>Qazana community</strong>  and meet thousands of other professional users and developers now</p>
+                <p className={`${Spirit.small} midgrey mt1`}>Get in touch with the <strong>Support team</strong>  and get the help you need on any Qazana related issues you may have</p>
             </a>
 
         </section>

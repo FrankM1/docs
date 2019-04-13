@@ -28,6 +28,34 @@ const plugins = [
     {
         resolve: `gatsby-source-filesystem`,
         options: {
+            path: path.join(__dirname, `content/elements`),
+            name: `markdown-pages`,
+        },
+    },
+    {
+        resolve: `gatsby-source-filesystem`,
+        options: {
+            path: path.join(__dirname, `content/getting-started`),
+            name: `markdown-pages`,
+        },
+    },
+    {
+        resolve: `gatsby-source-filesystem`,
+        options: {
+            path: path.join(__dirname, `content/install`),
+            name: `markdown-pages`,
+        },
+    },
+    {
+        resolve: `gatsby-source-filesystem`,
+        options: {
+            path: path.join(__dirname, `content/integrations`),
+            name: `markdown-pages`,
+        },
+    },
+    {
+        resolve: `gatsby-source-filesystem`,
+        options: {
             path: path.join(__dirname, `src`, `images`),
             name: `images`,
         },
