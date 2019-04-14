@@ -170,8 +170,8 @@ const plugins = [
     {
         resolve: "gatsby-source-wordpress",
         options: {
-          baseUrl: "wordpress-backend.test",
-          protocol: "http",
+          baseUrl: "api.qazana.net",
+          protocol: "https",
           hostingWPCOM: false,
           verboseOutput: true,
           includedRoutes: [
